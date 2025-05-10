@@ -1,6 +1,6 @@
 import { ChangeEvent, InputHTMLAttributes } from "react";
 
-import Search from "@/assets/icons/search.svg";
+import SearchIcon from "@/assets/icons/search.svg";
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   type?: "text" | "search";
@@ -14,7 +14,7 @@ export default function Input({
 }: InputProps) {
   return (
     <div className="bg-neutral-0 flex items-center gap-sm py-sm px-3sm rounded-md border border-decorative-dividers-gray">
-      {type === "search" && <Search />}
+      {type === "search" && <SearchIcon />}
       <input
         type={type}
         {...props}

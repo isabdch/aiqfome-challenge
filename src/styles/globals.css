@@ -36,11 +36,12 @@
   --font-nunito: "Nunito", sans-serif;
 
   /* Spacing */
-  --spacing-micro: 1px;
-  --spacing-xs: 2px;
-  --spacing-2xs: 3px;
-  --spacing-3xs: 4px;
-  --spacing-4xs: 5px;
+  --spacing-xs: 1px;
+  --spacing-2xs: 2px;
+  --spacing-3xs: 3px;
+  --spacing-4xs: 4px;
+  --spacing-5xs: 5px;
+  --spacing-6xs: 6px;
   --spacing-sm: 8px;
   --spacing-2sm: 10px;
   --spacing-3sm: 12px;
@@ -91,6 +92,14 @@
 
   .text-bold-purple-center {
     @apply text-center text-purple-700 font-bold;
+  }
+
+  .text-xs-bold-neutral-500 {
+    @apply text-xs font-bold text-neutral-500;
+  }
+
+  .dot-separator {
+    @apply w-icon-micro h-icon-micro bg-neutral-400 rounded-full;
   }
 }
 

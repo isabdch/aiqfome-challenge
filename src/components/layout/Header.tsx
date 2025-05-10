@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 
 import Input from "@/components/core/Input";
 
-import Logo from "@/assets/icons/logo.svg";
-import Profile from "@/assets/icons/profile.svg";
-import Location from "@/assets/icons/location.svg";
-import ChevronRight from "@/assets/icons/chevron-right.svg";
+import LogoIcon from "@/assets/icons/logo.svg";
+import ProfileIcon from "@/assets/icons/profile.svg";
+import LocationIcon from "@/assets/icons/location.svg";
+import ChevronRightIcon from "@/assets/icons/chevron-right.svg";
 
 export default function Header() {
   const pathname = usePathname();
@@ -16,27 +16,27 @@ export default function Header() {
   const isHomePage = pathname === "/";
 
   return (
-    <header className="p-md bg-brand sticky top-0 flex flex-col gap-md z-10 mb-micro">
+    <header className="p-md bg-brand sticky top-0 flex flex-col gap-md z-10 mb-xs">
       <nav className="flex items-center gap-lg max-container-md mx-auto">
         <Link href="/" aria-label="Ir para página inicial">
-          <Logo />
+          <LogoIcon />
         </Link>
 
         <div className="flex items-center gap-2sm">
-          <Location aria-hidden="true" />
+          <LocationIcon aria-hidden="true" />
 
           <div>
-            <p className="text-purple-200 text-sm font-bold mb-xs">
+            <p className="text-purple-200 text-sm font-bold mb-2xs">
               entregando em
             </p>
 
             <Link
               href="/"
               aria-label="Alterar endereço de entrega"
-              className="flex items-center gap-3xs font-bold text-neutral-0 text-md"
+              className="flex items-center gap-4xs font-bold text-neutral-0 text-md"
             >
               Rua Mandaguari, 198
-              <ChevronRight aria-hidden="true" />
+              <ChevronRightIcon aria-hidden="true" />
             </Link>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function Header() {
           className="text-neutral-0 ml-auto"
           aria-label="Acessar perfil do usuário"
         >
-          <Profile aria-hidden="true" />
+          <ProfileIcon aria-hidden="true" />
         </Link>
       </nav>
 

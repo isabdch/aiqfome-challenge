@@ -22,7 +22,7 @@
     "deliveryTime": "30-40 min",
     "distance": 5.2,
     "minOrder": 15,
-    "freeDeliveryOver": 35,
+    "freeDeliveryOver": null,
     "openingHours": "10:00-22:00"
   },
   {
@@ -48,7 +48,7 @@
     "deliveryTime": "30-40 min",
     "distance": 5.2,
     "minOrder": 15,
-    "freeDeliveryOver": 35,
+    "freeDeliveryOver": null,
     "openingHours": "10:00-22:00"
   }
 ]

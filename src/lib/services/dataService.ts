@@ -138,6 +138,21 @@ export async function getChoicesByDishId(dishId: number): Promise<Choice[]> {
   return choices.filter((choice) => choice.dishId === dishId);
 }
 
+export async function getCategoriesWithDishes(
+  restaurantId: number
+): Promise<(Category & { dishes: Dish[] })[]> {
+  const categories = await getCategoriesByRestaurantId(restaurantId);
+
+  const dishesWithDetails = await Promise.all(
+    categories.map((category) => getDishWithDetails(category.id))
+  );
+
+  return categories.map((category) => ({
+    ...category,
+    dishes: dishesWithDetails.filter((dish) => dish !== undefined),
+  }));
+}
+
 export async function getDishWithDetails(
   dishId: number
 ): Promise<

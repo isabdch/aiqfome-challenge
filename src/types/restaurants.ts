@@ -15,7 +15,7 @@ export type Restaurant = {
   deliveryTime: string;
   distance: number;
   minOrder: number;
-  freeDeliveryOver: number;
+  freeDeliveryOver: number | null;
   openingHours: string;
   categories: Category[];
 };

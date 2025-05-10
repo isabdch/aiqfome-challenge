@@ -1,5 +1,7 @@
 import { getRestaurantById } from "@/lib/services/dataService";
 
+import RestaurantHeader from "@/components/RestaurantHeader";
+
 type RestaurantPageProps = {
   params: {
     restaurantId: string;
@@ -9,13 +11,15 @@ type RestaurantPageProps = {
 export default async function RestaurantPage({ params }: RestaurantPageProps) {
   const { restaurantId } = params;
 
-  const restaurant = await getRestaurantById(Number(restaurantId));
+  const id = Number(restaurantId);
+
+  const restaurant = await getRestaurantById(id);
 
   if (!restaurant) return <div>Restaurante não encontrado</div>;
 
   return (
     <div>
-      <h1>{restaurant.name}</h1>
+      <RestaurantHeader restaurant={restaurant} />
     </div>
   );
 }
