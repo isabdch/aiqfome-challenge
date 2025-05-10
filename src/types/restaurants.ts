@@ -36,7 +36,7 @@ export type Option = {
   choices: Choice[];
 };
 
-export type MenuItem = {
+export type Dish = {
   id: number;
   name: string;
   description: string;
@@ -47,11 +47,11 @@ export type MenuItem = {
   options: Option[];
 };
 
-export type Menu = {
+export type Category = {
   id: number;
   name: string;
   description: string;
-  items: MenuItem[];
+  dishes: Dish[];
 };
 
 export enum OpenStatus {
@@ -59,17 +59,17 @@ export enum OpenStatus {
   CLOSED = "closed",
 }
 
-export type Product = {
+export type Restaurant = {
   id: number;
   name: string;
   cover: string;
   rating: number;
   deliveryFee: number;
-  open: OpenStatus;
+  status: OpenStatus;
   deliveryTime: string;
   distance: number;
   minOrder: number;
   freeDeliveryOver: number;
   openingHours: string;
-  menus: Menu[];
+  categories: Category[];
 };

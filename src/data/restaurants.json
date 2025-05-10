@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Matsuri Concept",
+    "cover": "/images/matsuri.webp",
+    "rating": 4.5,
+    "deliveryFee": 4.99,
+    "status": "open",
+    "deliveryTime": "30-40 min",
+    "distance": 5.2,
+    "minOrder": 15,
+    "freeDeliveryOver": 35,
+    "openingHours": "10:00-20:00"
+  },
+  {
+    "id": 2,
+    "name": "Subway - Avenida Center",
+    "cover": "/images/subway.webp",
+    "rating": 4.7,
+    "deliveryFee": 0,
+    "status": "closed",
+    "deliveryTime": "30-40 min",
+    "distance": 5.2,
+    "minOrder": 15,
+    "freeDeliveryOver": 35,
+    "openingHours": "10:00-22:00"
+  },
+  {
+    "id": 3,
+    "name": "Burger King - Colombo",
+    "cover": "/images/burgerking.webp",
+    "rating": 4.8,
+    "deliveryFee": 6,
+    "status": "closed",
+    "deliveryTime": "30-40 min",
+    "distance": 5.2,
+    "minOrder": 15,
+    "freeDeliveryOver": 35,
+    "openingHours": "10:00-22:00"
+  },
+  {
+    "id": 4,
+    "name": "McDonald's - Novo Centro",
+    "cover": "/images/mcdonalds.webp",
+    "rating": 4.4,
+    "deliveryFee": 0,
+    "status": "closed",
+    "deliveryTime": "30-40 min",
+    "distance": 5.2,
+    "minOrder": 15,
+    "freeDeliveryOver": 35,
+    "openingHours": "10:00-22:00"
+  }
+]

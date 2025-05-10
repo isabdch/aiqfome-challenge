@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "categoryId": 2,
+    "restaurantId": 1,
+    "name": "Ceviche de salmão",
+    "description": "salmão temperado com limão, cebola e pimenta",
+    "price": 19.9,
+    "originalPrice": null,
+    "image": "/images/ceviche.webp",
+    "tags": []
+  },
+  {
+    "id": 2,
+    "categoryId": 3,
+    "restaurantId": 1,
+    "name": "Califórnia",
+    "description": "Kani, pepino e maçã ou manga",
+    "price": 13.99,
+    "originalPrice": 17,
+    "image": "",
+    "tags": ["vegetarian"]
+  },
+  {
+    "id": 3,
+    "categoryId": 3,
+    "restaurantId": 1,
+    "name": "Filadélfia",
+    "description": "Arroz, salmão fresco, cream cheese e cebolinha",
+    "price": 13.99,
+    "originalPrice": null,
+    "image": "",
+    "tags": []
+  },
+  {
+    "id": 4,
+    "categoryId": 3,
+    "restaurantId": 1,
+    "name": "Mix",
+    "description": "Escolha 3 ingredientes: shimeji, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese, goiabada, banana, requeijão, molho de maracujá, manga, maçã e morango.",
+    "price": 13.99,
+    "originalPrice": null,
+    "image": "",
+    "tags": ["spicy"]
+  },
+  {
+    "id": 5,
+    "categoryId": 3,
+    "restaurantId": 1,
+    "name": "Salmão picante",
+    "description": "Alga, arroz, salmão fresco, pimenta e cebolinha",
+    "price": 13.99,
+    "originalPrice": null,
+    "image": "",
+    "tags": ["spicy"]
+  }
+]

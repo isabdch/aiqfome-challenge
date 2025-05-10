@@ -10,13 +10,13 @@ import ChevronRight from "@/assets/icons/chevron-right.svg";
 export default function Header() {
   return (
     <header className="p-md bg-brand sticky top-0 flex flex-col gap-md z-10 mb-micro">
-      <nav className="flex items-center gap-lg">
+      <nav className="flex items-center gap-lg max-container-md mx-auto">
         <Link href="/" aria-label="Ir para página inicial">
-          <Logo className="w-icon-lg h-icon-lg" />
+          <Logo />
         </Link>
 
         <div className="flex items-center gap-2sm">
-          <Location aria-hidden="true" className="w-icon-md h-icon-md" />
+          <Location aria-hidden="true" />
 
           <div>
             <p className="text-purple-200 text-sm font-bold mb-xs">
@@ -29,10 +29,7 @@ export default function Header() {
               className="flex items-center gap-3xs font-bold text-neutral-0 text-md"
             >
               Rua Mandaguari, 198
-              <ChevronRight
-                aria-hidden="true"
-                className="w-icon-sm h-icon-sm"
-              />
+              <ChevronRight aria-hidden="true" />
             </Link>
           </div>
         </div>
@@ -42,15 +39,17 @@ export default function Header() {
           className="text-neutral-0 ml-auto"
           aria-label="Acessar perfil do usuário"
         >
-          <Profile className="w-icon-md h-icon-md" aria-hidden="true" />
+          <Profile aria-hidden="true" />
         </Link>
       </nav>
 
-      <Input
-        type="search"
-        placeholder="busque pela loja ou culinária"
-        aria-label="Buscar loja ou culinária"
-      />
+      <div className="max-container-md mx-auto">
+        <Input
+          type="search"
+          placeholder="busque pela loja ou culinária"
+          aria-label="Buscar loja ou culinária"
+        />
+      </div>
     </header>
   );
 }

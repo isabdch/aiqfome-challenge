@@ -14,7 +14,7 @@ export default function Input({
 }: InputProps) {
   return (
     <div className="bg-neutral-0 flex items-center gap-sm py-sm px-3sm rounded-md border border-decorative-dividers-gray">
-      {type === "search" && <Search className="w-icon-md h-icon-md" />}
+      {type === "search" && <Search />}
       <input
         type={type}
         {...props}

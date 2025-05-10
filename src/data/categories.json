@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Niguiris",
+    "description": "",
+    "restaurantId": 1
+  },
+  {
+    "id": 2,
+    "name": "Ceviches",
+    "description": "um prato super refrescante de peixe fatiado e marinado com limão",
+    "restaurantId": 1
+  },
+  {
+    "id": 3,
+    "name": "Temakis",
+    "description": "sushi em forma de cone com salmão e cream cheese",
+    "restaurantId": 1
+  },
+  {
+    "id": 4,
+    "name": "Bebidas",
+    "description": "",
+    "restaurantId": 1
+  },
+  {
+    "id": 5,
+    "name": "Sobremesas",
+    "description": "",
+    "restaurantId": 1
+  }
+]
