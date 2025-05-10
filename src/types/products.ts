@@ -6,10 +6,10 @@ export enum TagType {
   LACTOSE_FREE = "lactose_free",
 }
 
-export interface Tag {
+export type Tag = {
   id: number;
   type: TagType;
-}
+};
 
 export enum ItemOptionType {
   CHECKBOX = "checkbox",
@@ -17,15 +17,15 @@ export enum ItemOptionType {
   NUMBER = "number",
 }
 
-export interface Choice {
+export type Choice = {
   id: number;
   name: string;
   price: number | null;
   originalPrice: number | null;
   additionalPrice: number | null;
-}
+};
 
-export interface Option {
+export type Option = {
   id: number;
   name: string;
   min: number | null;
@@ -34,9 +34,9 @@ export interface Option {
   required: boolean;
   type: ItemOptionType;
   choices: Choice[];
-}
+};
 
-export interface MenuItem {
+export type MenuItem = {
   id: number;
   name: string;
   description: string;
@@ -45,21 +45,21 @@ export interface MenuItem {
   image: string;
   tags: Tag[];
   options: Option[];
-}
+};
 
-export interface Menu {
+export type Menu = {
   id: number;
   name: string;
   description: string;
   items: MenuItem[];
-}
+};
 
 export enum OpenStatus {
   OPEN = "open",
   CLOSED = "closed",
 }
 
-export interface Product {
+export type Product = {
   id: number;
   name: string;
   cover: string;
@@ -72,4 +72,4 @@ export interface Product {
   freeDeliveryOver: number;
   openingHours: string;
   menus: Menu[];
-}
+};

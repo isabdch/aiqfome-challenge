@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-brand: #7b1fa2;
+
+  --color-decorative-dividers-gray: #cdd1d9;
+  --color-decorative-icons-gray: #a8adb7;
+
+  --color-text-light: #6d6f73;
+  --color-text-purple: #580f78;
+
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f5f6f9;
+  --color-neutral-100: #eef0f5;
+  --color-neutral-200: #cdd1d9;
+  --color-neutral-400: #a8adb7;
+  --color-neutral-500: #6d6f73;
+  --color-neutral-700: #393a3c;
+  --color-neutral-900: #202326;
+  --color-neutral-999: #000000;
+
+  --color-yellow-500: #ffb300;
+
+  --color-purple-200: #eecffc;
+  --color-purple-500: #7b1fa2;
+  --color-purple-700: #580f78;
+
+  --color-teal-50: #f2fafa;
+  --color-teal-400: #00a296;
+  --color-teal-600: #027a7a;
+
+  --color-green-500: #02a117;
+
+  /* Fonts */
+  --font-nunito: "Nunito", sans-serif;
+
+  /* Spacing */
+  --spacing-micro: 1px;
+  --spacing-xs: 2px;
+  --spacing-2xs: 3px;
+  --spacing-3xs: 4px;
+  --spacing-4xs: 5px;
+  --spacing-sm: 8px;
+  --spacing-2sm: 10px;
+  --spacing-3sm: 12px;
+  --spacing-md: 16px;
+  --spacing-2md: 18px;
+  --spacing-3md: 20px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 56px;
+  --spacing-5xl: 64px;
+
+  /* Icon Sizes */
+  --spacing-icon-sm: 16px;
+  --spacing-icon-md: 24px;
+  --spacing-icon-lg: 32px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+  --radius-4xl: 28px;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-md: 1rem; /* 16px */
+  --text-lg: 1.25rem; /* 20px */
+  --text-xl: 1.5rem; /* 24px */
+}
+
+:root {
+  --background-color: var(--color-neutral-0);
+}
+
+body {
+  background: var(--background-color);
+  font-family: var(--font-nunito);
+}

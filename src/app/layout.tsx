@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 import { Nunito } from "next/font/google";
 
-import "./globals.css";
+import "@/styles/globals.css";
 
-import Header from "@/components/Header";
+import Header from "@/components/layout/Header";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -12,8 +12,8 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "AIQfome",
-  description: "AIQfome",
+  title: "aiqfome",
+  description: "aiqfome",
   icons: {
     icon: "/logo.svg",
   },
