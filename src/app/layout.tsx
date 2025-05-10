@@ -27,10 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${nunito.variable} antialiased`}>
+      <body className={`${nunito.variable} antialiased flex flex-col`}>
         <Header />
 
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
 
         <Footer />
       </body>

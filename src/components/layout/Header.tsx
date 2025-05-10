@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import Input from "@/components/core/Input";
 
@@ -8,6 +11,10 @@ import Location from "@/assets/icons/location.svg";
 import ChevronRight from "@/assets/icons/chevron-right.svg";
 
 export default function Header() {
+  const pathname = usePathname();
+
+  const isHomePage = pathname === "/";
+
   return (
     <header className="p-md bg-brand sticky top-0 flex flex-col gap-md z-10 mb-micro">
       <nav className="flex items-center gap-lg max-container-md mx-auto">
@@ -43,13 +50,15 @@ export default function Header() {
         </Link>
       </nav>
 
-      <div className="max-container-md mx-auto">
-        <Input
-          type="search"
-          placeholder="busque pela loja ou culinária"
-          aria-label="Buscar loja ou culinária"
-        />
-      </div>
+      {isHomePage && (
+        <div className="max-container-md mx-auto">
+          <Input
+            type="search"
+            placeholder="busque pela loja ou culinária"
+            aria-label="Buscar loja ou culinária"
+          />
+        </div>
+      )}
     </header>
   );
 }
