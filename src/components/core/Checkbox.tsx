@@ -4,27 +4,28 @@ type CheckboxProps = {
   label: string;
   checked: boolean;
   onChange: (checked: boolean) => void;
-  id?: string;
+  disabled?: boolean;
 };
 
 export default function Checkbox({
-  id,
   label,
   checked,
   onChange,
+  disabled = false,
 }: CheckboxProps) {
-  const componentId =
-    id || `checkbox-${label.replace(/\s+/g, "-").toLowerCase()}`;
-
   return (
-    <div className="flex items-center gap-4xs">
-      <div className="p-4xs">
-        <button
-          type="button"
-          id={componentId}
-          role="checkbox"
-          aria-checked={checked}
-          onClick={() => onChange(!checked)}
+    <button
+      type="button"
+      role="checkbox"
+      disabled={disabled}
+      aria-checked={checked}
+      className="flex items-center gap-4xs"
+      onClick={() => {
+        onChange(!checked);
+      }}
+    >
+      <div className="p-4xs pointer-events-none">
+        <div
           className={`w-md h-md border rounded-sm
                     transition duration-150
                     flex items-center justify-center cursor-pointer 
@@ -36,16 +37,10 @@ export default function Checkbox({
                     }`}
         >
           {checked && <CheckIcon />}
-        </button>
+        </div>
       </div>
 
-      <span
-        id={`${componentId}-label`}
-        className="text-label cursor-pointer"
-        onClick={() => onChange(!checked)}
-      >
-        {label}
-      </span>
-    </div>
+      <span className="text-label cursor-pointer">{label}</span>
+    </button>
   );
 }

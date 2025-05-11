@@ -31,7 +31,7 @@ export default async function MenuPage({ params }: MenuPageProps) {
 
         <div>
           {dish.options.map((option) => (
-            <DishOption key={option.id} option={option} />
+            <DishOption key={option.id} option={option} dish={dish} />
           ))}
         </div>
 

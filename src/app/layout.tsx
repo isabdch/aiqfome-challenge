@@ -4,6 +4,8 @@ import { Nunito } from "next/font/google";
 
 import "@/styles/globals.css";
 
+import { DishOrderProvider } from "@/contexts/DishOrderContext";
+
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -28,11 +30,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${nunito.variable} antialiased flex flex-col`}>
-        <Header />
+        <DishOrderProvider>
+          <Header />
 
-        <main className="flex-1">{children}</main>
+          <main className="flex-1">{children}</main>
 
-        <Footer />
+          <Footer />
+        </DishOrderProvider>
       </body>
     </html>
   );

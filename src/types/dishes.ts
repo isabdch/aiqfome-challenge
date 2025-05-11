@@ -22,3 +22,7 @@ export type Dish = {
   restaurantId: number;
   categoryId: number;
 };
+
+export type SelectedDish = Dish & {
+  quantity: number;
+};

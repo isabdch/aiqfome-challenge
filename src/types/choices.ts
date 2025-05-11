@@ -7,3 +7,5 @@ export type Choice = {
   optionId: number;
   dishId: number;
 };
+
+export type SelectedChoice = Choice & { quantity: number };

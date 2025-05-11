@@ -30,7 +30,10 @@ export default function Counter({
 
   return (
     <div className="flex items-center gap-4xs">
-      <button onClick={() => onChange(value - 1)}>
+      <button
+        onClick={() => onChange(trash ? 0 : value - 1)}
+        className="active:opacity-70"
+      >
         {trash && value > 0 ? (
           <TrashIcon viewBox="0 0 32 33" {...SIZE_PROPS} />
         ) : value > 0 ? (
@@ -46,7 +49,7 @@ export default function Counter({
         {value}
       </div>
 
-      <button onClick={() => onChange(value + 1)}>
+      <button onClick={() => onChange(value + 1)} className="active:opacity-70">
         <PlusIcon viewBox="0 0 32 33" {...SIZE_PROPS} />
       </button>
 

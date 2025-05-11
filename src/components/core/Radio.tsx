@@ -2,7 +2,6 @@ type RadioProps = {
   label: string;
   name: string;
   checked: boolean;
-  id?: string;
   icon?: React.ReactNode;
   onChange: (checked: boolean) => void;
 };
@@ -10,32 +9,29 @@ type RadioProps = {
 export default function Radio({
   label,
   name,
-  id,
   icon,
   checked,
   onChange,
 }: RadioProps) {
-  const componentId =
-    id || `radio-${name}-${label.replace(/\s+/g, "-").toLowerCase()}`;
-  const labelId = `${componentId}-label`;
-
-  const handleClick = () => {
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
     if (!checked) {
       onChange(true);
     }
   };
 
   return (
-    <div className="flex items-center gap-4xs">
+    <button
+      name={name}
+      role="radio"
+      type="button"
+      aria-checked={checked}
+      aria-labelledby={label}
+      onClick={handleClick}
+      className="flex items-center gap-4xs"
+    >
       <div className="p-4xs">
-        <button
-          name={name}
-          role="radio"
-          type="button"
-          id={componentId}
-          aria-checked={checked}
-          aria-labelledby={labelId}
-          onClick={handleClick}
+        <div
           className={`w-md h-md border rounded-full 
                     transition duration-150
                     flex items-center justify-center cursor-pointer
@@ -49,18 +45,12 @@ export default function Radio({
           {checked && (
             <span className="w-icon-xs h-icon-xs bg-white rounded-full" />
           )}
-        </button>
+        </div>
       </div>
 
       {icon && <span className="flex items-center">{icon}</span>}
 
-      <span
-        id={labelId}
-        onClick={handleClick}
-        className="text-label cursor-pointer"
-      >
-        {label}
-      </span>
-    </div>
+      <span className="text-label cursor-pointer">{label}</span>
+    </button>
   );
 }

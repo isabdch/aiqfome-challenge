@@ -3,13 +3,15 @@ import { formatDishOptionLabel } from "@/utils/dish";
 import Badge from "@/components/core/Badge";
 import OptionChoices from "@/components/option/OptionChoices";
 
+import type { Dish } from "@/types/dishes";
 import type { Option } from "@/types/options";
 
 type DishOptionProps = {
+  dish: Dish;
   option: Option;
 };
 
-export default function DishOption({ option }: DishOptionProps) {
+export default function DishOption({ dish, option }: DishOptionProps) {
   return (
     <div className="p-md border-b-4 border-neutral-100 flex flex-col gap-md">
       <div className="flex items-center justify-between gap-sm">
@@ -29,7 +31,13 @@ export default function DishOption({ option }: DishOptionProps) {
         role={option.type === "radio" ? "radiogroup" : "group"}
       >
         {option.choices.map((choice) => (
-          <OptionChoices key={choice.id} type={option.type} choice={choice} />
+          <OptionChoices
+            dish={dish}
+            key={choice.id}
+            choice={choice}
+            option={option}
+            type={option.type}
+          />
         ))}
       </div>
     </div>
