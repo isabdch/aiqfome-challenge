@@ -35,7 +35,7 @@ export default async function MenuPage({ params }: MenuPageProps) {
           ))}
         </div>
 
-        <DishObservations />
+        <DishObservations dish={dish} />
       </div>
     </div>
   );

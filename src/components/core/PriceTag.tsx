@@ -1,4 +1,7 @@
-import { PRICE_TAG_COLOR_VARIANTS } from "@/constants/styles";
+import {
+  PRICE_TAG_COLOR_VARIANTS,
+  PRICE_TAG_SIZE_VARIANTS,
+} from "@/constants/styles";
 
 import { formatCurrency } from "@/utils/currency";
 import { dishDiscountStatus } from "@/utils/dish";
@@ -8,9 +11,11 @@ import DiscountIcon from "@/assets/icons/discount.svg";
 type PriceTagProps = {
   price: number;
   icon?: boolean;
+  size?: "sm" | "md" | "lg";
   additional?: boolean;
   startPrice?: boolean;
   originalPrice?: number | null;
+  color?: "primary" | "secondary";
   discountPosition?: "left" | "top";
 };
 
@@ -19,12 +24,15 @@ export default function PriceTag({
   price,
   additional,
   startPrice,
+  size = "md",
+  color = "primary",
   originalPrice,
   discountPosition,
 }: PriceTagProps) {
   const ICON_SIZE = 16;
 
   const hasDiscount = !!originalPrice;
+  const priceColor = hasDiscount ? dishDiscountStatus(hasDiscount) : color;
 
   return (
     <div className="h-fit flex items-center gap-2xs">
@@ -36,7 +44,9 @@ export default function PriceTag({
 
       <div className="flex flex-col gap-2xs">
         {startPrice && (
-          <span className="text-xs-bold-neutral-500 text-center">a partir de</span>
+          <span className="text-xs-bold-neutral-500 text-center">
+            a partir de
+          </span>
         )}
 
         {originalPrice && discountPosition === "top" && (
@@ -46,9 +56,7 @@ export default function PriceTag({
         )}
 
         <p
-          className={`flex items-center gap-2xs text-sm font-bold ${
-            PRICE_TAG_COLOR_VARIANTS[dishDiscountStatus(hasDiscount)]
-          }`}
+          className={`flex items-center gap-2xs ${PRICE_TAG_SIZE_VARIANTS[size]}  ${PRICE_TAG_COLOR_VARIANTS[priceColor]}`}
         >
           {icon && (
             <DiscountIcon

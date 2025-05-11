@@ -1,7 +1,8 @@
 import type { Dish } from "@/types/dishes";
 
-import { formatCurrency } from "@/utils/currency";
 import { dishHasPriceOptions } from "@/utils/dish";
+
+import PriceTag from "@/components/core/PriceTag";
 
 type DishHeaderProps = {
   dish: Dish;
@@ -19,9 +20,12 @@ export default function DishHeader({ dish }: DishHeaderProps) {
           </span>
         )}
 
-        <span className="text-2md font-extrabold text-brand">
-          {formatCurrency(dish.price)}
-        </span>
+        <PriceTag
+          size="lg"
+          price={dish.price}
+          discountPosition="left"
+          originalPrice={dish.originalPrice}
+        />
       </div>
 
       <p className="text-sm text-neutral-500">{dish.description}</p>

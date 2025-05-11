@@ -6,7 +6,7 @@ export function saveToLocalStorage<T>(key: string, value: T): void {
 
     localStorage.setItem(key, serializedState);
   } catch (error) {
-    console.warn(`Erro ao salvar ${key} no localStorage:`, error);
+    console.warn(`Error saving ${key} to localStorage:`, error);
   }
 }
 
@@ -20,7 +20,7 @@ export function loadFromLocalStorage<T>(key: string): T | undefined {
 
     return JSON.parse(serializedState) as T;
   } catch (error) {
-    console.warn(`Erro ao carregar ${key} do localStorage:`, error);
+    console.warn(`Error loading ${key} from localStorage:`, error);
 
     return;
   }

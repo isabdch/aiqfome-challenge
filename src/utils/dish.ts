@@ -3,8 +3,8 @@ import type { Option } from "@/types/options";
 
 export function dishDiscountStatus(
   hasDiscount: boolean
-): "discount" | "default" {
-  return hasDiscount ? "discount" : "default";
+): "discount" | "primary" | "secondary" {
+  return hasDiscount ? "discount" : "primary";
 }
 
 export function dishHasPriceOptions(dish: Dish): boolean {

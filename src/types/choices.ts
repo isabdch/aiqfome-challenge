@@ -4,6 +4,7 @@ export type Choice = {
   price: number | null;
   originalPrice: number | null;
   additionalPrice: number | null;
+  basePrice: boolean;
   optionId: number;
   dishId: number;
 };

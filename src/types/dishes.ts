@@ -25,4 +25,5 @@ export type Dish = {
 
 export type SelectedDish = Dish & {
   quantity: number;
+  observations: string;
 };

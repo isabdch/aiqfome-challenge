@@ -9,7 +9,8 @@ export const RESTAURANT_STATUS_COLOR_VARIANTS = {
 };
 
 export const PRICE_TAG_COLOR_VARIANTS = {
-  default: "text-brand",
+  primary: "text-brand",
+  secondary: "text-teal-400",
   discount: "text-green-500",
 };
 
@@ -21,4 +22,10 @@ export const COUNTER_TEXT_SIZE_VARIANTS = {
 export const COUNTER_BUTTON_SIZE_VARIANTS = {
   small: 24,
   large: 32,
+};
+
+export const PRICE_TAG_SIZE_VARIANTS = {
+  sm: "text-xs font-bold",
+  md: "text-sm font-bold",
+  lg: "text-2md font-extrabold",
 };

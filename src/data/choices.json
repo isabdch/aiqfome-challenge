@@ -4,6 +4,7 @@
     "dishId": 1,
     "optionId": 1,
     "name": "médio",
+    "basePrice": true,
     "price": 19.9,
     "originalPrice": 22.9,
     "additionalPrice": null
@@ -13,6 +14,7 @@
     "dishId": 1,
     "optionId": 1,
     "name": "grande",
+    "basePrice": true,
     "price": 28.9,
     "originalPrice": null,
     "additionalPrice": null
@@ -22,6 +24,7 @@
     "dishId": 1,
     "optionId": 2,
     "name": "shoyu",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": null
@@ -31,6 +34,7 @@
     "dishId": 1,
     "optionId": 2,
     "name": "gengibre",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": null
@@ -40,6 +44,7 @@
     "dishId": 1,
     "optionId": 2,
     "name": "wasabi",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": null
@@ -49,6 +54,7 @@
     "dishId": 1,
     "optionId": 2,
     "name": "sem acompanhamentos",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": null
@@ -58,6 +64,7 @@
     "dishId": 1,
     "optionId": 3,
     "name": "coca-cola",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": 5
@@ -67,6 +74,7 @@
     "dishId": 1,
     "optionId": 3,
     "name": "fanta laranja",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": 5
@@ -76,6 +84,7 @@
     "dishId": 1,
     "optionId": 3,
     "name": "guaraná antártica",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": 5
@@ -85,6 +94,7 @@
     "dishId": 1,
     "optionId": 3,
     "name": "suco prats laranja",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": 6
@@ -94,6 +104,7 @@
     "dishId": 1,
     "optionId": 3,
     "name": "água sem gás",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": 3
@@ -103,6 +114,7 @@
     "dishId": 1,
     "optionId": 4,
     "name": "hashi",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": null
@@ -112,6 +124,7 @@
     "dishId": 1,
     "optionId": 4,
     "name": "garfo e faca descartável",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": 1
@@ -121,6 +134,7 @@
     "dishId": 1,
     "optionId": 5,
     "name": "biscoito da sorte",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": 2
@@ -130,6 +144,7 @@
     "dishId": 1,
     "optionId": 5,
     "name": "rolinho primavera",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": 8
@@ -139,6 +154,7 @@
     "dishId": 1,
     "optionId": 5,
     "name": "guioza",
+    "basePrice": false,
     "price": null,
     "originalPrice": null,
     "additionalPrice": 6

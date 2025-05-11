@@ -49,6 +49,7 @@
   --spacing-2md: 18px;
   --spacing-3md: 20px;
   --spacing-lg: 24px;
+  --spacing-2lg: 29px;
   --spacing-xl: 32px;
   --spacing-2xl: 36px;
   --spacing-3xl: 40px;
@@ -86,6 +87,9 @@
   --text-2md: 1.125rem; /* 18px */
   --text-lg: 1.25rem; /* 20px */
   --text-xl: 1.5rem; /* 24px */
+
+  /* Box Shadows */
+  --shadow-footer: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 @layer components {
