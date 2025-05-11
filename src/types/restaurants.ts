@@ -18,4 +18,5 @@ export type Restaurant = {
   freeDeliveryOver: number | null;
   openingHours: string;
   categories: Category[];
+  tags: string[];
 };

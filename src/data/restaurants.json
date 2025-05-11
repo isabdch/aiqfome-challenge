@@ -10,7 +10,8 @@
     "distance": 5.2,
     "minOrder": 15,
     "freeDeliveryOver": 35,
-    "openingHours": "10:00-20:00"
+    "openingHours": "10:00-20:00",
+    "tags": ["sushi", "temaki"]
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     "distance": 5.2,
     "minOrder": 15,
     "freeDeliveryOver": null,
-    "openingHours": "10:00-22:00"
+    "openingHours": "10:00-22:00",
+    "tags": ["sandwich", "burger", "hamburger", "fast food"]
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
     "distance": 5.2,
     "minOrder": 15,
     "freeDeliveryOver": 35,
-    "openingHours": "10:00-22:00"
+    "openingHours": "10:00-22:00",
+    "tags": ["burger", "hamburger", "sandwich", "fast food"]
   },
   {
     "id": 4,
@@ -49,6 +52,7 @@
     "distance": 5.2,
     "minOrder": 15,
     "freeDeliveryOver": null,
-    "openingHours": "10:00-22:00"
+    "openingHours": "10:00-22:00",
+    "tags": ["burger", "hamburger", "sandwich", "fast food"]
   }
 ]

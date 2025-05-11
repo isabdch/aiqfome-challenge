@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { useSearch } from "@/contexts/SearchContext";
+
 import Input from "@/components/core/Input";
 
 import LogoIcon from "@/assets/icons/logo.svg";
@@ -13,6 +15,8 @@ import ChevronRightIcon from "@/assets/icons/chevron-right.svg";
 export default function Header() {
   const pathname = usePathname();
 
+  const { searchTerm, setSearchTerm } = useSearch();
+
   const isHomePage = pathname === "/";
 
   return (
@@ -21,7 +25,7 @@ export default function Header() {
         isHomePage && "mb-xs"
       }`}
     >
-      <nav className="flex items-center gap-lg max-container-md mx-auto">
+      <nav className="flex items-center gap-lg max-container-md mx-auto w-full">
         <Link href="/" aria-label="Ir para página inicial">
           <LogoIcon />
         </Link>
@@ -55,11 +59,13 @@ export default function Header() {
       </nav>
 
       {isHomePage && (
-        <div className="max-container-md mx-auto">
+        <div className="max-container-md mx-auto w-full">
           <Input
             type="search"
             placeholder="busque pela loja ou culinária"
             aria-label="Buscar loja ou culinária"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
       )}
