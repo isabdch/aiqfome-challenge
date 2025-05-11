@@ -13,7 +13,7 @@ type RestaurantPageProps = {
 };
 
 export default async function RestaurantPage({ params }: RestaurantPageProps) {
-  const { restaurantId } = params;
+  const { restaurantId } = await params;
 
   const ID = Number(restaurantId);
 
@@ -25,7 +25,7 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
   if (!restaurant) return <div>Restaurante não encontrado</div>;
 
   return (
-    <div>
+    <div className="max-container-md">
       <RestaurantHeader restaurant={restaurant} />
       <RestaurantCategories categories={categories} />
     </div>

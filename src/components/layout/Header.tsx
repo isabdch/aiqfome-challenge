@@ -16,7 +16,11 @@ export default function Header() {
   const isHomePage = pathname === "/";
 
   return (
-    <header className="p-md bg-brand sticky top-0 flex flex-col gap-md z-10 mb-xs">
+    <header
+      className={`p-md bg-brand sticky top-0 flex flex-col gap-md z-10 ${
+        isHomePage && "mb-xs"
+      }`}
+    >
       <nav className="flex items-center gap-lg max-container-md mx-auto">
         <Link href="/" aria-label="Ir para página inicial">
           <LogoIcon />
@@ -33,7 +37,7 @@ export default function Header() {
             <Link
               href="/"
               aria-label="Alterar endereço de entrega"
-              className="flex items-center gap-4xs font-bold text-neutral-0 text-md"
+              className="flex items-center gap-4xs font-bold text-neutral-0 text-md-with-base-leading"
             >
               Rua Mandaguari, 198
               <ChevronRightIcon aria-hidden="true" />

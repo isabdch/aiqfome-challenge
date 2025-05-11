@@ -12,3 +12,13 @@ export const PRICE_TAG_COLOR_VARIANTS = {
   default: "text-brand",
   discount: "text-green-500",
 };
+
+export const COUNTER_TEXT_SIZE_VARIANTS = {
+  small: "text-sm",
+  large: "text-md",
+};
+
+export const COUNTER_BUTTON_SIZE_VARIANTS = {
+  small: 24,
+  large: 32,
+};

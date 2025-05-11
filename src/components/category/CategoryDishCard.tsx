@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { dishHasPriceOptions } from "@/utils/dish";
+
 import type { Dish } from "@/types/dishes";
 
 import PriceTag from "@/components/core/PriceTag";
@@ -13,7 +15,7 @@ export default function CategoryDishCard({ dish }: CategoryDishCardProps) {
   return (
     <Link
       className="pl-sm flex justify-between"
-      href={`/restaurant/${dish.restaurantId}/dish/${dish.id}`}
+      href={`/restaurants/${dish.restaurantId}/dishes/${dish.id}`}
     >
       <div className="flex flex-col gap-2xs">
         <h3 className="text-sm font-semibold text-neutral-900 flex items-center gap-4xs">
@@ -28,11 +30,11 @@ export default function CategoryDishCard({ dish }: CategoryDishCardProps) {
       </div>
 
       <PriceTag
+        price={dish.price}
+        discountPosition="top"
         icon={!!dish.originalPrice}
         originalPrice={dish.originalPrice}
-        discountPosition="top"
-        startPrice={!!dish.options.length}
-        price={dish.price}
+        startPrice={dishHasPriceOptions(dish)}
       />
     </Link>
   );

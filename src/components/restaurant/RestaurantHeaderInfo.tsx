@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import {
   DELIVERY_TEXT_COLOR_VARIANTS,
   RESTAURANT_STATUS_COLOR_VARIANTS,
@@ -31,7 +33,8 @@ export default function RestaurantHeaderInfo({
   return (
     <div className="flex flex-col gap-sm">
       <div className="flex items-center gap-6xs">
-        <div
+        <Link
+          href={`/restaurants/${restaurant.id}`}
           className={`${deliveryTextColorVariant} flex items-center gap-4xs`}
         >
           <MotorcycleIcon />
@@ -41,7 +44,7 @@ export default function RestaurantHeaderInfo({
           </span>
 
           <ArrowIcon />
-        </div>
+        </Link>
 
         <div className="dot-separator" />
 
@@ -64,7 +67,10 @@ export default function RestaurantHeaderInfo({
       )}
 
       <div className="flex items-center gap-6xs">
-        <div className="flex items-center text-neutral-500 gap-4xs">
+        <Link
+          href={`/restaurants/${restaurant.id}`}
+          className="flex items-center text-neutral-500 gap-4xs"
+        >
           <StarIcon width={16} height={16} viewBox="0 0 24 24" />
 
           <span className="text-xs-bold-neutral-500">
@@ -72,7 +78,7 @@ export default function RestaurantHeaderInfo({
           </span>
 
           <ArrowIcon />
-        </div>
+        </Link>
 
         <div className="dot-separator" />
 

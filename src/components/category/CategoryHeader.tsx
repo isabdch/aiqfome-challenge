@@ -15,7 +15,7 @@ export default function RestaurantCategoryHeader({
   hasDiscount = false,
 }: RestaurantCategoryHeaderProps) {
   return (
-    <div className="w-full flex items-center gap-sm">
+    <div className="w-full flex items-center gap-sm cursor-pointer">
       <div className=" flex flex-col flex-1 gap-4xs">
         <h2 className="flex items-center gap-4xs text-md font-bold text-neutral-900">
           {category.name}

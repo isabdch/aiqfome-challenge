@@ -199,6 +199,22 @@ export async function getOptionsByDishId(dishId: number): Promise<Option[]> {
   return options.filter((option) => option.dishId === dishId);
 }
 
+export async function getOptionsByDishIdWithDetails(
+  dishId: number
+): Promise<Option[]> {
+  const options = await getOptionsByDishId(dishId);
+
+  const optionsWithChoices = await Promise.all(
+    options.map(async (option) => {
+      const choicesForOption = await getChoicesByOptionId(option.id);
+
+      return { ...option, choices: choicesForOption };
+    })
+  );
+
+  return optionsWithChoices;
+}
+
 // --- CHOICES ---
 export async function getChoices(): Promise<Choice[]> {
   return fetchData<Choice>(CHOICES_FILE);

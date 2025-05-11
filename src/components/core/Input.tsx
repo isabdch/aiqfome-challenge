@@ -19,7 +19,7 @@ export default function Input({
         type={type}
         {...props}
         onChange={onChange}
-        className="flex-1 text-sm font-semibold focus:outline-neutral-999 focus:outline placeholder:text-text-light placeholder:text-sm placeholder:font-semibold placeholder:opacity-70"
+        className="flex-1 text-sm font-semibold outline-neutral-999 placeholder:text-text-light placeholder:text-sm placeholder:font-semibold placeholder:opacity-70"
       />
     </div>
   );

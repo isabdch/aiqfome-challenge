@@ -29,7 +29,7 @@ export default function RestaurantCard({
           width={IMG_SIZE}
           height={IMG_SIZE}
           alt={restaurant.name}
-          src={restaurant.cover}
+          src={restaurant.cover || "/images/restaurant.webp"}
           className={
             restaurant.status === "open" ? "opacity-100" : "opacity-40"
           }
@@ -37,7 +37,7 @@ export default function RestaurantCard({
       </div>
 
       <div className="pr-3sm py-3sm flex flex-col flex-1 justify-center gap-4xs">
-        <h3 className="text-md font-bold text-neutral-700 line-clamp-1">
+        <h3 className="text-md-bold-neutral-700 line-clamp-1">
           {restaurant.name}
         </h3>
 

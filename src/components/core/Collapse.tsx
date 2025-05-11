@@ -12,7 +12,7 @@ export default function Collapse({
   onToggle,
 }: CollapseProps) {
   return (
-    <div className="border-b-4 border-neutral-100">
+    <div className="border-b-4 border-neutral-100 last-of-type:border-b-0">
       <button
         onClick={onToggle}
         className="w-full px-md py-3sm my-4xs flex justify-between items-center"

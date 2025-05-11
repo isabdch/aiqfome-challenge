@@ -54,8 +54,10 @@
   --spacing-3xl: 40px;
   --spacing-4xl: 48px;
   --spacing-5xl: 56px;
-  --spacing-6xl: 64px;
-  --spacing-7xl: 72px;
+  --spacing-6xl: 62px;
+  --spacing-7xl: 64px;
+  --spacing-8xl: 68px;
+  --spacing-9xl: 72px;
 
   /* Icon Sizes */
   --spacing-icon-micro: 4px;
@@ -81,6 +83,7 @@
   --text-xs: 0.75rem; /* 12px */
   --text-sm: 0.875rem; /* 14px */
   --text-md: 1rem; /* 16px */
+  --text-2md: 1.125rem; /* 18px */
   --text-lg: 1.25rem; /* 20px */
   --text-xl: 1.5rem; /* 24px */
 }
@@ -96,6 +99,18 @@
 
   .text-xs-bold-neutral-500 {
     @apply text-xs font-bold text-neutral-500;
+  }
+
+  .text-md-bold-neutral-700 {
+    @apply text-md font-bold text-neutral-700;
+  }
+
+  .text-md-with-base-leading {
+    @apply text-md leading-4;
+  }
+
+  .text-label {
+    @apply text-sm text-neutral-500;
   }
 
   .dot-separator {

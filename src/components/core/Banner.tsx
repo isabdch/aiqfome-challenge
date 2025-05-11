@@ -8,7 +8,7 @@ type BannerProps = {
 export default function Banner({ image, height = "sm" }: BannerProps) {
   const heightVariants = {
     sm: "h-[130px]",
-    md: "h-[200px]",
+    md: "h-[195px]",
     lg: "h-[250px]",
   };
 
