@@ -4,7 +4,7 @@ import type { Restaurant } from "@/types/restaurants";
 
 import Button from "@/components/core/Button";
 import ArrowIcon from "@/components/core/ArrowIcon";
-import RestaurantHeaderInfo from "@/components/RestaurantHeaderInfo";
+import RestaurantHeaderInfo from "@/components/restaurant/RestaurantHeaderInfo";
 
 import ShareIcon from "@/assets/icons/share.svg";
 import HeartIcon from "@/assets/icons/heart.svg";

@@ -19,7 +19,7 @@
     "price": 13.99,
     "originalPrice": 17,
     "image": "",
-    "tags": ["vegetarian"]
+    "tags": [{ "id": "vegan", "type": "vegan" }]
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
     "price": 13.99,
     "originalPrice": null,
     "image": "",
-    "tags": ["spicy"]
+    "tags": [{ "id": "spicy", "type": "spicy" }]
   },
   {
     "id": 5,
@@ -52,6 +52,6 @@
     "price": 13.99,
     "originalPrice": null,
     "image": "",
-    "tags": ["spicy"]
+    "tags": [{ "id": "spicy", "type": "spicy" }]
   }
 ]

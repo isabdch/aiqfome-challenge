@@ -1,4 +1,4 @@
-import RestaurantCard from "@/components/RestaurantCard";
+import RestaurantCard from "@/components/restaurant/RestaurantCard";
 
 import type { Restaurant } from "@/types/restaurants";
 

@@ -3,13 +3,10 @@ import type { Option } from "@/types/options";
 export enum TagType {
   SPICY = "spicy",
   VEGAN = "vegan",
-  VEGETARIAN = "vegetarian",
-  GLUTEN_FREE = "gluten_free",
-  LACTOSE_FREE = "lactose_free",
 }
 
 export type Tag = {
-  id: number;
+  id: string;
   type: TagType;
 };
 

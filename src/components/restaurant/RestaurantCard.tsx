@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { DELIVERY_TEXT_COLOR_VARIANTS } from "@/constants/styles";
 
-import { deliveryFeeStatus, formatDeliveryText } from "@/utils/restaurant";
+import { deliveryFeeStatus, formatDeliveryText } from "@/utils/delivery";
 
 import type { Restaurant } from "@/types/restaurants";
 

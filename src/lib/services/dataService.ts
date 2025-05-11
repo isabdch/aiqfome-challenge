@@ -58,6 +58,39 @@ export async function getRestaurantById(
   return restaurants.find((restaurant) => restaurant.id === id);
 }
 
+export async function getFullRestaurantDetails(
+  restaurantId: number
+): Promise<Restaurant | undefined> {
+  const restaurant = await getRestaurantById(restaurantId);
+
+  if (!restaurant) return undefined;
+
+  const categoriesForRestaurant = await getCategoriesByRestaurantId(
+    restaurantId
+  );
+
+  const categoriesWithDishes = await Promise.all(
+    categoriesForRestaurant.map(async (category) => {
+      const dishesForCategory = await getDishesByCategoryId(category.id);
+
+      const dishesWithDetails = await Promise.all(
+        dishesForCategory.map((dish) => getDishWithDetails(dish.id))
+      );
+
+      return {
+        ...category,
+        dishes: dishesWithDetails.filter(
+          (dish) => dish !== undefined
+        ) as (Dish & {
+          options?: (Option & { choices?: Choice[] })[];
+        })[],
+      };
+    })
+  );
+
+  return { ...restaurant, categories: categoriesWithDishes };
+}
+
 // --- CATEGORIES ---
 export async function getCategories(): Promise<Category[]> {
   return fetchData<Category>(CATEGORIES_FILE);
@@ -71,6 +104,21 @@ export async function getCategoriesByRestaurantId(
   return categories.filter(
     (category) => category.restaurantId === restaurantId
   );
+}
+
+export async function getCategoriesWithDishes(
+  restaurantId: number
+): Promise<Category[]> {
+  const categories = await getCategoriesByRestaurantId(restaurantId);
+
+  const dishesForCategories = await Promise.all(
+    categories.map((category) => getDishesByCategoryIdWithDetails(category.id))
+  );
+
+  return categories.map((category, index) => ({
+    ...category,
+    dishes: dishesForCategories[index] || [],
+  }));
 }
 
 export async function getCategoryById(
@@ -92,6 +140,26 @@ export async function getDishById(id: number): Promise<Dish | undefined> {
   return dishes.find((dish) => dish.id === id);
 }
 
+export async function getDishWithDetails(
+  dishId: number
+): Promise<Dish | undefined> {
+  const dish = await getDishById(dishId);
+
+  if (!dish) return undefined;
+
+  const optionsForDish = await getOptionsByDishId(dishId);
+
+  const optionsWithChoices = await Promise.all(
+    optionsForDish.map(async (option) => {
+      const choicesForOption = await getChoicesByOptionId(option.id);
+
+      return { ...option, choices: choicesForOption };
+    })
+  );
+
+  return { ...dish, options: optionsWithChoices };
+}
+
 export async function getDishesByRestaurantId(
   restaurantId: number
 ): Promise<Dish[]> {
@@ -106,6 +174,18 @@ export async function getDishesByCategoryId(
   const dishes = await getDishes();
 
   return dishes.filter((dish) => dish.categoryId === categoryId);
+}
+
+export async function getDishesByCategoryIdWithDetails(
+  categoryId: number
+): Promise<Dish[]> {
+  const dishes = await getDishesByCategoryId(categoryId);
+
+  const dishesWithDetails = await Promise.all(
+    dishes.map((dish) => getDishWithDetails(dish.id))
+  );
+
+  return dishesWithDetails.filter((dish) => dish !== undefined) as Dish[];
 }
 
 // --- OPTIONS ---
@@ -136,79 +216,4 @@ export async function getChoicesByDishId(dishId: number): Promise<Choice[]> {
   const choices = await getChoices();
 
   return choices.filter((choice) => choice.dishId === dishId);
-}
-
-export async function getCategoriesWithDishes(
-  restaurantId: number
-): Promise<(Category & { dishes: Dish[] })[]> {
-  const categories = await getCategoriesByRestaurantId(restaurantId);
-
-  const dishesWithDetails = await Promise.all(
-    categories.map((category) => getDishWithDetails(category.id))
-  );
-
-  return categories.map((category) => ({
-    ...category,
-    dishes: dishesWithDetails.filter((dish) => dish !== undefined),
-  }));
-}
-
-export async function getDishWithDetails(
-  dishId: number
-): Promise<
-  (Dish & { options?: (Option & { choices?: Choice[] })[] }) | undefined
-> {
-  const dish = await getDishById(dishId);
-
-  if (!dish) return undefined;
-
-  const optionsForDish = await getOptionsByDishId(dishId);
-
-  const optionsWithChoices = await Promise.all(
-    optionsForDish.map(async (option) => {
-      const choicesForOption = await getChoicesByOptionId(option.id);
-
-      return { ...option, choices: choicesForOption };
-    })
-  );
-
-  return { ...dish, options: optionsWithChoices };
-}
-
-export async function getFullRestaurantDetails(restaurantId: number): Promise<
-  | (Restaurant & {
-      categories?: (Category & {
-        dishes?: (Dish & { options?: (Option & { choices?: Choice[] })[] })[];
-      })[];
-    })
-  | undefined
-> {
-  const restaurant = await getRestaurantById(restaurantId);
-
-  if (!restaurant) return undefined;
-
-  const categoriesForRestaurant = await getCategoriesByRestaurantId(
-    restaurantId
-  );
-
-  const categoriesWithDishes = await Promise.all(
-    categoriesForRestaurant.map(async (category) => {
-      const dishesForCategory = await getDishesByCategoryId(category.id);
-
-      const dishesWithDetails = await Promise.all(
-        dishesForCategory.map((dish) => getDishWithDetails(dish.id))
-      );
-
-      return {
-        ...category,
-        dishes: dishesWithDetails.filter(
-          (dish) => dish !== undefined
-        ) as (Dish & {
-          options?: (Option & { choices?: Choice[] })[];
-        })[],
-      };
-    })
-  );
-
-  return { ...restaurant, categories: categoriesWithDishes };
 }

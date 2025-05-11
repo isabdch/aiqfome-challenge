@@ -3,12 +3,9 @@ import {
   RESTAURANT_STATUS_COLOR_VARIANTS,
 } from "@/constants/styles";
 
-import {
-  deliveryFeeStatus,
-  formatDeliveryText,
-  formatRestaurantStatusText,
-} from "@/utils/restaurant";
 import { formatCurrency } from "@/utils/currency";
+import { formatRestaurantStatusText } from "@/utils/restaurant";
+import { deliveryFeeStatus, formatDeliveryText } from "@/utils/delivery";
 
 import type { Restaurant } from "@/types/restaurants";
 

@@ -1,7 +1,7 @@
 import { getRestaurants } from "@/lib/services/dataService";
 
 import Banner from "@/components/core/Banner";
-import RestaurantsList from "@/components/RestaurantsList";
+import RestaurantsList from "@/components/restaurant/RestaurantsList";
 
 export default async function Home() {
   const restaurants = await getRestaurants();
