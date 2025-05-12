@@ -6,7 +6,7 @@ import {
 } from "@/constants/styles";
 
 import { formatCurrency } from "@/utils/currency";
-import { formatRestaurantStatusText } from "@/utils/restaurant";
+import { formatRestaurantStatusText } from "@/utils/restaurants";
 import { deliveryFeeStatus, formatDeliveryText } from "@/utils/delivery";
 
 import type { Restaurant } from "@/types/restaurants";

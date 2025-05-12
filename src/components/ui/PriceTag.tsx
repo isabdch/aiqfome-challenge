@@ -4,7 +4,7 @@ import {
 } from "@/constants/styles";
 
 import { formatCurrency } from "@/utils/currency";
-import { dishDiscountStatus } from "@/utils/dish";
+import { dishDiscountStatus } from "@/utils/dishes";
 
 import DiscountIcon from "@/assets/icons/discount.svg";
 

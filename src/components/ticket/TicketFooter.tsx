@@ -10,7 +10,7 @@ export default function TicketFooter() {
   const totalPrice = getTotalPrice();
 
   return (
-    <footer className="bg-neutral-0 shadow-footer rounded-t-lg py-md px-xl sticky bottom-0">
+    <footer className="ticket-footer">
       <div className="max-container-md flex justify-between items-center gap-2lg">
         <div className="flex flex-col gap-2xs">
           <p className="text-sm text-neutral-900 font-bold">subtotal</p>

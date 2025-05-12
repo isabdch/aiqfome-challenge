@@ -117,6 +117,10 @@
     @apply text-sm text-neutral-500;
   }
 
+  .ticket-footer {
+    @apply bg-neutral-0 shadow-footer rounded-t-lg py-md px-xl sticky bottom-0;
+  }
+
   .dot-separator {
     @apply w-icon-micro h-icon-micro bg-neutral-400 rounded-full;
   }

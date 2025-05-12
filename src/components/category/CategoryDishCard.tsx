@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { dishHasPriceOptions } from "@/utils/dish";
+import { dishHasPriceOptions } from "@/utils/dishes";
 
 import type { Dish } from "@/types/dishes";
 

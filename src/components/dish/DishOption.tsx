@@ -1,4 +1,4 @@
-import { formatDishOptionLabel } from "@/utils/dish";
+import { formatDishOptionLabel } from "@/utils/dishes";
 
 import Badge from "@/components/ui/Badge";
 import OptionChoices from "@/components/option/OptionChoices";

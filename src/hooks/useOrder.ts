@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 import { saveToLocalStorage, loadFromLocalStorage } from "@/lib/localStorage";
 
@@ -67,253 +67,292 @@ export function useOrder(): UseOrderReturn {
     }
   }, [selectedChoices, isLoading]);
 
-  function handleDish(dishToHandle: Dish, newQuantity: number): void {
-    if (
-      selectedDishes.length &&
-      selectedDishes[0].restaurantId !== dishToHandle.restaurantId
-    ) {
-      setSelectedDishes([]);
-      setSelectedChoices([]);
-    }
+  const dishIsAlreadySelected = useCallback(
+    (dish: Dish): boolean => {
+      return selectedDishes.some((d) => d?.id === dish.id);
+    },
+    [selectedDishes]
+  );
 
-    setSelectedDishes((prevDishes) => {
-      const existingDishIndex = prevDishes.findIndex(
-        (d) => d.id === dishToHandle.id
-      );
+  const selectedDish = useCallback(
+    (dish: Dish): SelectedDish | undefined => {
+      return selectedDishes.find((d) => d?.id === dish.id);
+    },
+    [selectedDishes]
+  );
 
-      if (newQuantity <= 0) {
-        if (existingDishIndex !== -1) {
-          setSelectedChoices((prevChoices) => {
-            const nextChoices = prevChoices.filter(
-              (sc) => sc.dishId !== dishToHandle.id
-            );
+  const selectedChoice = useCallback(
+    (choice: Choice): SelectedChoice | undefined => {
+      return selectedChoices.find((c) => c?.id === choice.id);
+    },
+    [selectedChoices]
+  );
 
-            return nextChoices;
-          });
+  const getChoiceQuantity = useCallback(
+    (choiceId: number): number => {
+      const choice = selectedChoices.find((sc) => sc.id === choiceId);
 
-          return prevDishes.filter((d) => d.id !== dishToHandle.id);
-        }
+      return choice ? choice.quantity : 0;
+    },
+    [selectedChoices]
+  );
 
-        return prevDishes;
+  const optionLimitReached = useCallback(
+    (option: Option): boolean => {
+      const limit = option.limit || option.max;
+
+      if (!limit) return false;
+
+      const totalQuantityForOption = selectedChoices
+        .filter((sc) => sc.optionId === option.id)
+        .reduce((sum, sc) => sum + sc.quantity, 0);
+
+      return totalQuantityForOption >= limit;
+    },
+    [selectedChoices]
+  );
+
+  const handleDish = useCallback(
+    (dishToHandle: Dish, newQuantity: number): void => {
+      if (
+        selectedDishes.length &&
+        selectedDishes[0].restaurantId !== dishToHandle.restaurantId
+      ) {
+        setSelectedDishes([]);
+        setSelectedChoices([]);
       }
 
-      if (existingDishIndex !== -1) {
-        const updatedDishes = [...prevDishes];
+      setSelectedDishes((prevDishes) => {
+        const existingDishIndex = prevDishes.findIndex(
+          (d) => d.id === dishToHandle.id
+        );
 
-        updatedDishes[existingDishIndex] = {
-          ...prevDishes[existingDishIndex],
-          ...dishToHandle,
-          quantity: newQuantity,
-        };
+        if (newQuantity <= 0) {
+          if (existingDishIndex !== -1) {
+            setSelectedChoices((prevChoices) => {
+              const nextChoices = prevChoices.filter(
+                (sc) => sc.dishId !== dishToHandle.id
+              );
 
-        return updatedDishes;
-      } else {
-        return [
-          ...prevDishes,
-          { ...dishToHandle, quantity: newQuantity, observations: "" },
-        ];
-      }
-    });
-  }
+              return nextChoices;
+            });
 
-  function dishIsAlreadySelected(dish: Dish): boolean {
-    return selectedDishes.some((d) => d?.id === dish.id);
-  }
-
-  function selectedDish(dish: Dish): SelectedDish | undefined {
-    return selectedDishes.find((d) => d?.id === dish.id);
-  }
-
-  function selectedChoice(choice: Choice): SelectedChoice | undefined {
-    return selectedChoices.find((c) => c?.id === choice.id);
-  }
-
-  function addFirstDish(dish: Dish): void {
-    if (!dishIsAlreadySelected(dish)) {
-      handleDish(dish, 1);
-    }
-  }
-
-  function handleDishObservations(dish: Dish, observations: string): void {
-    setSelectedDishes((prevDishes) => {
-      const existingDishIndex = prevDishes.findIndex((d) => d.id === dish.id);
-
-      if (existingDishIndex !== -1) {
-        const updatedDishes = prevDishes.map((item, index) => {
-          if (index === existingDishIndex) {
-            return {
-              ...item,
-              observations: observations,
-            };
+            return prevDishes.filter((d) => d.id !== dishToHandle.id);
           }
 
-          return item;
-        });
+          return prevDishes;
+        }
 
-        return updatedDishes;
-      } else {
-        return [
-          ...prevDishes,
-          { ...dish, quantity: 1, observations: observations },
-        ];
-      }
-    });
-  }
+        if (existingDishIndex !== -1) {
+          const updatedDishes = [...prevDishes];
 
-  function upsertChoice(choice: Choice, quantity: number, dish: Dish): void {
-    addFirstDish(dish);
+          updatedDishes[existingDishIndex] = {
+            ...prevDishes[existingDishIndex],
+            ...dishToHandle,
+            quantity: newQuantity,
+          };
 
-    setSelectedChoices((prevChoices) => {
-      const existingChoiceIndex = prevChoices.findIndex(
-        (sc) => sc.id === choice.id
-      );
-
-      if (quantity <= 0) {
-        if (existingChoiceIndex !== -1)
-          return prevChoices.filter((sc) => sc.id !== choice.id);
-
-        return prevChoices;
-      }
-
-      if (existingChoiceIndex !== -1) {
-        const updatedChoices = [...prevChoices];
-
-        updatedChoices[existingChoiceIndex] = {
-          ...updatedChoices[existingChoiceIndex],
-          quantity,
-        };
-
-        return updatedChoices;
-      } else {
-        return [...prevChoices, { ...choice, quantity }];
-      }
-    });
-  }
-
-  function selectRadioChoice(choice: Choice, dish: Dish): void {
-    addFirstDish(dish);
-
-    setSelectedChoices((prevChoices) => {
-      const filteredChoices = prevChoices.filter(
-        (sc) => sc.optionId !== choice.optionId
-      );
-
-      return [...filteredChoices, { ...choice, quantity: 1 }];
-    });
-  }
-
-  function toggleCheckboxChoice(
-    choice: SelectedChoice,
-    dish: Dish,
-    option: Option
-  ): void {
-    if (optionLimitReached(option) && !choice.quantity) return;
-
-    addFirstDish(dish);
-
-    setSelectedChoices((prevChoices) => {
-      const existingChoiceIndex = prevChoices.findIndex(
-        (prevChoice) => prevChoice.id === choice.id
-      );
-
-      if (existingChoiceIndex !== -1) {
-        return prevChoices.filter(
-          (prevChoice, index) => index !== existingChoiceIndex
-        );
-      } else {
-        return [...prevChoices, { ...choice, quantity: 1 }];
-      }
-    });
-  }
-
-  function getChoiceQuantity(choiceId: number): number {
-    const choice = selectedChoices.find((sc) => sc.id === choiceId);
-
-    return choice ? choice.quantity : 0;
-  }
-
-  function optionLimitReached(option: Option): boolean {
-    const limit = option.limit || option.max;
-
-    if (!limit) return false;
-
-    const totalQuantityForOption = selectedChoices
-      .filter((sc) => sc.optionId === option.id)
-      .reduce((sum, sc) => sum + sc.quantity, 0);
-
-    return totalQuantityForOption >= limit;
-  }
-
-  function checkDishRequirements(dishId: number): boolean {
-    if (!dishId) return false;
-
-    const dish = selectedDishes.find((d) => d.id === dishId);
-
-    if (!dish) return false;
-
-    for (const option of dish.options) {
-      if (option.required) {
-        const choicesForThisOption = selectedChoices.filter(
-          (sc) => sc.optionId === option.id && sc.dishId === dishId
-        );
-
-        const totalQuantitySelectedForOption = choicesForThisOption.reduce(
-          (sum, sc) => sum + sc.quantity,
-          0
-        );
-
-        if (option.type === ItemOptionType.RADIO) {
-          if (choicesForThisOption.length === 0) return false;
+          return updatedDishes;
         } else {
-          const effectiveMin = option.min ?? 1;
+          return [
+            ...prevDishes,
+            { ...dishToHandle, quantity: newQuantity, observations: "" },
+          ];
+        }
+      });
+    },
+    [selectedDishes]
+  );
 
-          if (effectiveMin > 0 && totalQuantitySelectedForOption < effectiveMin)
-            return false;
+  const addFirstDish = useCallback(
+    (dish: Dish): void => {
+      if (!dishIsAlreadySelected(dish)) {
+        handleDish(dish, 1);
+      }
+    },
+    [handleDish, dishIsAlreadySelected]
+  );
+
+  const handleDishObservations = useCallback(
+    (dish: Dish, observations: string): void => {
+      setSelectedDishes((prevDishes) => {
+        const existingDishIndex = prevDishes.findIndex((d) => d.id === dish.id);
+
+        if (existingDishIndex !== -1) {
+          const updatedDishes = prevDishes.map((item, index) => {
+            if (index === existingDishIndex) {
+              return {
+                ...item,
+                observations: observations,
+              };
+            }
+
+            return item;
+          });
+
+          return updatedDishes;
+        } else {
+          return [
+            ...prevDishes,
+            { ...dish, quantity: 1, observations: observations },
+          ];
+        }
+      });
+    },
+    []
+  );
+
+  const upsertChoice = useCallback(
+    (choice: Choice, quantity: number, dish: Dish): void => {
+      addFirstDish(dish);
+
+      setSelectedChoices((prevChoices) => {
+        const existingChoiceIndex = prevChoices.findIndex(
+          (sc) => sc.id === choice.id
+        );
+
+        if (quantity <= 0) {
+          if (existingChoiceIndex !== -1)
+            return prevChoices.filter((sc) => sc.id !== choice.id);
+
+          return prevChoices;
+        }
+
+        if (existingChoiceIndex !== -1) {
+          const updatedChoices = [...prevChoices];
+
+          updatedChoices[existingChoiceIndex] = {
+            ...updatedChoices[existingChoiceIndex],
+            quantity,
+          };
+
+          return updatedChoices;
+        } else {
+          return [...prevChoices, { ...choice, quantity }];
+        }
+      });
+    },
+    [addFirstDish]
+  );
+
+  const selectRadioChoice = useCallback(
+    (choice: Choice, dish: Dish): void => {
+      addFirstDish(dish);
+
+      setSelectedChoices((prevChoices) => {
+        const filteredChoices = prevChoices.filter(
+          (sc) => sc.optionId !== choice.optionId
+        );
+
+        return [...filteredChoices, { ...choice, quantity: 1 }];
+      });
+    },
+    [addFirstDish]
+  );
+
+  const toggleCheckboxChoice = useCallback(
+    (
+      choice: SelectedChoice,
+      dish: Dish,
+      option: Option
+    ): void => {
+      if (optionLimitReached(option) && !choice.quantity) return;
+
+      addFirstDish(dish);
+
+      setSelectedChoices((prevChoices) => {
+        const existingChoiceIndex = prevChoices.findIndex(
+          (prevChoice) => prevChoice.id === choice.id
+        );
+
+        if (existingChoiceIndex !== -1) {
+          return prevChoices.filter(
+            (prevChoice, index) => index !== existingChoiceIndex
+          );
+        } else {
+          return [...prevChoices, { ...choice, quantity: 1 }];
+        }
+      });
+    },
+    [addFirstDish, optionLimitReached]
+  );
+
+  const checkDishRequirements = useCallback(
+    (dishId: number): boolean => {
+      if (!dishId) return false;
+
+      const dish = selectedDishes.find((d) => d.id === dishId);
+
+      if (!dish) return false;
+
+      for (const option of dish.options) {
+        if (option.required) {
+          const choicesForThisOption = selectedChoices.filter(
+            (sc) => sc.optionId === option.id && sc.dishId === dishId
+          );
+
+          const totalQuantitySelectedForOption = choicesForThisOption.reduce(
+            (sum, sc) => sum + sc.quantity,
+            0
+          );
+
+          if (option.type === ItemOptionType.RADIO) {
+            if (choicesForThisOption.length === 0) return false;
+          } else {
+            const effectiveMin = option.min ?? 1;
+
+            if (effectiveMin > 0 && totalQuantitySelectedForOption < effectiveMin)
+              return false;
+          }
         }
       }
-    }
 
-    return true;
-  }
+      return true;
+    },
+    [selectedDishes, selectedChoices]
+  );
 
-  function getDishPrice(dish?: SelectedDish): number {
-    if (!dish) return 0;
+  const getDishPrice = useCallback(
+    (dish?: SelectedDish): number => {
+      if (!dish) return 0;
 
-    let calculatedDishBasePrice: number;
+      let calculatedDishBasePrice: number;
 
-    const basePriceDefiningChoice = selectedChoices.find(
-      (sc) => sc.dishId === dish.id && sc.basePrice === true
-    );
+      const basePriceDefiningChoice = selectedChoices.find(
+        (sc) => sc.dishId === dish.id && sc.basePrice === true
+      );
 
-    if (basePriceDefiningChoice) {
-      calculatedDishBasePrice =
-        (basePriceDefiningChoice.price || 0) * dish.quantity;
-    } else {
-      calculatedDishBasePrice = dish.price * dish.quantity;
-    }
+      if (basePriceDefiningChoice) {
+        calculatedDishBasePrice =
+          (basePriceDefiningChoice.price || 0) * dish.quantity;
+      } else {
+        calculatedDishBasePrice = dish.price * dish.quantity;
+      }
 
-    const additionalChoicesTotalPrice = selectedChoices
-      .filter(
-        (sc) =>
-          sc.dishId === dish.id &&
-          !sc.basePrice &&
-          sc.additionalPrice &&
-          sc.additionalPrice > 0
-      )
-      .reduce((sum, sc) => {
-        return sum + (sc.additionalPrice || 0) * sc.quantity;
-      }, 0);
+      const additionalChoicesTotalPrice = selectedChoices
+        .filter(
+          (sc) =>
+            sc.dishId === dish.id &&
+            !sc.basePrice &&
+            sc.additionalPrice &&
+            sc.additionalPrice > 0
+        )
+        .reduce((sum, sc) => {
+          return sum + (sc.additionalPrice || 0) * sc.quantity;
+        }, 0);
 
-    return calculatedDishBasePrice + additionalChoicesTotalPrice;
-  }
+      return calculatedDishBasePrice + additionalChoicesTotalPrice;
+    },
+    [selectedChoices]
+  );
 
-  function getTotalPrice(): number {
+  const getTotalPrice = useCallback((): number => {
     const dishPrices = selectedDishes.map((d) => getDishPrice(d));
 
     return dishPrices.reduce((sum, price) => sum + price, 0);
-  }
+  }, [selectedDishes, getDishPrice]);
 
-  function getSelectedDishesWithChoices(): SelectedDish[] {
+  const getSelectedDishesWithChoices = useCallback((): SelectedDish[] => {
     return selectedDishes.map((dish) => {
       const optionsWithSelectedChoices = dish.options
         .map((option) => {
@@ -343,16 +382,16 @@ export function useOrder(): UseOrderReturn {
         options: optionsWithSelectedChoices as Option[],
       };
     });
-  }
+  }, [selectedDishes, selectedChoices]);
 
   return {
     selectedDishes,
     selectedChoices,
     handleDish,
     dishIsAlreadySelected,
+    addFirstDish,
     selectedDish,
     selectedChoice,
-    addFirstDish,
     upsertChoice,
     selectRadioChoice,
     toggleCheckboxChoice,

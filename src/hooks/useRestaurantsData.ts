@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 
 import { formatDeliveryText } from "@/utils/delivery";
-import { formatCategoryStatus } from "@/utils/category";
+import { formatCategoryStatus } from "@/utils/categories";
 
 import type { Restaurant } from "@/types/restaurants";
 

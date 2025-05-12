@@ -1,6 +1,6 @@
 "use client";
 
-import { hasCategoryDiscount } from "@/utils/category";
+import { hasCategoryDiscount } from "@/utils/categories";
 
 import { useCategoriesStates } from "@/hooks/useCategoriesStates";
 

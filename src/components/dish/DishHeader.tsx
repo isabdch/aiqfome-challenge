@@ -1,6 +1,6 @@
 import type { Dish } from "@/types/dishes";
 
-import { dishHasPriceOptions } from "@/utils/dish";
+import { dishHasPriceOptions } from "@/utils/dishes";
 
 import PriceTag from "@/components/ui/PriceTag";
 

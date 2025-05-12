@@ -1,11 +1,14 @@
 "use client";
 
+import React, { Suspense, lazy } from "react";
+
 import { useParams } from "next/navigation";
 
 import { useFooter } from "@/hooks/useFooter";
 
 import Button from "@/components/ui/Button";
-import TicketFooter from "@/components/ticket/TicketFooter";
+
+const TicketFooter = lazy(() => import("@/components/ticket/TicketFooter"));
 
 export default function Footer() {
   const params = useParams();
@@ -19,7 +22,9 @@ export default function Footer() {
   return (
     <>
       {showTicketFooter ? (
-        <TicketFooter />
+        <Suspense fallback={<div className="ticket-footer">Carregando...</div>}>
+          <TicketFooter />
+        </Suspense>
       ) : (
         <footer className="bg-neutral-100 py-lg px-md">
           <div className="max-container-md flex flex-col gap-sm justify-center items-center">
