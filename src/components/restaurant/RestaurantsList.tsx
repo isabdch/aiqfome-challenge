@@ -15,15 +15,17 @@ export default function RestaurantsList({
     <article className="max-container-md">
       <h2 className="text-lg font-bold text-brand mb-md">{title}</h2>
 
-      <div className="flex flex-col gap-md">
+      <ul role="list" className="flex flex-col gap-md">
         {!restaurants.length ? (
-          <p className="text-label">Nenhum restaurante encontrado</p>
+          <li className="text-label">Nenhum restaurante encontrado</li>
         ) : (
           restaurants.map((restaurant) => (
-            <RestaurantCard key={restaurant.id} restaurant={restaurant} />
+            <li role="listitem" key={restaurant.id}>
+              <RestaurantCard restaurant={restaurant} />
+            </li>
           ))
         )}
-      </div>
+      </ul>
     </article>
   );
 }

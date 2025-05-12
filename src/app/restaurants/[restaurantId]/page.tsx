@@ -1,7 +1,10 @@
+import { Metadata } from "next";
+
 import {
   getRestaurantById,
   getCategoriesWithDishes,
 } from "@/lib/services/dataService";
+import { generatePageMetadata, generateNotFoundMetadata } from "@/lib/metadata";
 
 import RestaurantHeader from "@/components/restaurant/RestaurantHeader";
 import RestaurantCategories from "@/components/restaurant/RestaurantCategories";
@@ -11,6 +14,23 @@ type RestaurantPageProps = {
     restaurantId: string;
   };
 };
+
+export async function generateMetadata({
+  params,
+}: RestaurantPageProps): Promise<Metadata> {
+  const { restaurantId } = params;
+
+  const ID = Number(restaurantId);
+
+  const restaurant = await getRestaurantById(ID);
+
+  if (!restaurant) return generateNotFoundMetadata("Restaurante");
+
+  return generatePageMetadata(
+    restaurant.name,
+    `Cardápio do restaurante ${restaurant.name}. Faça seu pedido!`
+  );
+}
 
 export default async function RestaurantPage({ params }: RestaurantPageProps) {
   const { restaurantId } = await params;
@@ -24,15 +44,20 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
 
   if (!restaurant)
     return (
-      <div className="p-md text-label text-center">
-        Restaurante não encontrado
-      </div>
+      <section>
+        <h1 className="p-md text-label text-center">
+          Restaurante não encontrado
+        </h1>
+      </section>
     );
 
   return (
-    <div className="max-container-md">
+    <section className="max-container-md">
       <RestaurantHeader restaurant={restaurant} />
-      <RestaurantCategories categories={categories} />
-    </div>
+
+      <section aria-label="Cardápio do restaurante">
+        <RestaurantCategories categories={categories} />
+      </section>
+    </section>
   );
 }

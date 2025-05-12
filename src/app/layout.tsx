@@ -4,6 +4,8 @@ import { Nunito } from "next/font/google";
 
 import "@/styles/globals.css";
 
+import { generatePageMetadata } from "@/lib/metadata";
+
 import { SearchProvider } from "@/contexts/SearchContext";
 import { DishOrderProvider } from "@/contexts/DishOrderContext";
 
@@ -15,13 +17,10 @@ const nunito = Nunito({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "aiqfome",
-  description: "aiqfome",
-  icons: {
-    icon: "/logo.svg",
-  },
-};
+export const metadata: Metadata = generatePageMetadata(
+  "Início",
+  "Peça comida pelo aiqfome com facilidade e rapidez. Vários restaurantes disponíveis para entrega."
+);
 
 export default function RootLayout({
   children,
