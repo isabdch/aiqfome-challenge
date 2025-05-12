@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 import { useRouter, usePathname } from "next/navigation";
 
-import { useDishOrderContext } from "@/contexts/DishOrderContext";
+import { useOrderContext } from "@/contexts/OrderContext";
 
 type UseFooterProps = {
   restaurantIdFromParams?: string | string[];
@@ -25,7 +25,7 @@ export function useFooter({
   const pathname = usePathname();
 
   const { selectedDishes, checkDishRequirements, selectedChoices } =
-    useDishOrderContext();
+    useOrderContext();
 
   const [showButton, setShowButton] = useState(false);
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
@@ -50,7 +50,7 @@ export function useFooter({
     } else {
       setShowTicketFooter(false);
     }
-  }, [pathname, currentRestaurantId, selectedDishes, router]);
+  }, [pathname]);
 
   useEffect(() => {
     if (currentDishId !== null) {
@@ -94,11 +94,11 @@ export function useFooter({
     };
   }, [showButton, currentDishId, checkDishRequirements, selectedChoices]);
 
-  const handleNavigate = () => {
-    if (currentDishId) {
+  const handleNavigate = useCallback(() => {
+    if (currentDishId && currentRestaurantId) {
       router.push(`/restaurants/${currentRestaurantId}/ticket`);
     }
-  };
+  }, [router, currentDishId, currentRestaurantId]);
 
   return {
     showButton,

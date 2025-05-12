@@ -1,13 +1,13 @@
 "use client";
 
-import { useDishOrderContext } from "@/contexts/DishOrderContext";
+import { useOrderContext } from "@/contexts/OrderContext";
 
 import { formatCurrency } from "@/utils/currency";
 
 import type { Dish } from "@/types/dishes";
 
-import Button from "@/components/core/Button";
-import Counter from "@/components/core/Counter";
+import Button from "@/components/ui/Button";
+import Counter from "@/components/ui/Counter";
 
 type DishQuantitySectionProps = {
   dish: Dish;
@@ -17,7 +17,7 @@ export default function DishQuantitySection({
   dish,
 }: DishQuantitySectionProps) {
   const { handleDish, dishIsAlreadySelected, selectedDish, getDishPrice } =
-    useDishOrderContext();
+    useOrderContext();
 
   const isSelected = dishIsAlreadySelected(dish);
   const quantity = selectedDish(dish)?.quantity || 0;

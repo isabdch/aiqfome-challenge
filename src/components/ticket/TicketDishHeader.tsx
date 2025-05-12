@@ -1,17 +1,17 @@
 "use client";
 
-import { useDishOrderContext } from "@/contexts/DishOrderContext";
+import { useOrderContext } from "@/contexts/OrderContext";
 
 import type { SelectedDish } from "@/types/dishes";
 
-import PriceTag from "@/components/core/PriceTag";
+import PriceTag from "@/components/ui/PriceTag";
 
 type TicketDishHeaderProps = {
   dish: SelectedDish;
 };
 
 export default function TicketDishHeader({ dish }: TicketDishHeaderProps) {
-  const { getDishPrice } = useDishOrderContext();
+  const { getDishPrice } = useOrderContext();
 
   return (
     <div className="flex justify-between items-center">

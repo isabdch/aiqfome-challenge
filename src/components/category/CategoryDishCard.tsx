@@ -4,7 +4,7 @@ import { dishHasPriceOptions } from "@/utils/dish";
 
 import type { Dish } from "@/types/dishes";
 
-import PriceTag from "@/components/core/PriceTag";
+import PriceTag from "@/components/ui/PriceTag";
 import CategoryTags from "@/components/category/CategoryTags";
 
 type CategoryDishCardProps = {

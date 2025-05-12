@@ -1,16 +1,16 @@
 "use client";
 
-import { useDishOrderContext } from "@/contexts/DishOrderContext";
+import { useOrderContext } from "@/contexts/OrderContext";
 
 import type { Dish } from "@/types/dishes";
 import type { Choice } from "@/types/choices";
 import type { Option } from "@/types/options";
 import type { ItemOptionType } from "@/types/options";
 
-import Radio from "@/components/core/Radio";
-import Counter from "@/components/core/Counter";
-import Checkbox from "@/components/core/Checkbox";
-import PriceTag from "@/components/core/PriceTag";
+import Radio from "@/components/ui/Radio";
+import Counter from "@/components/ui/Counter";
+import Checkbox from "@/components/ui/Checkbox";
+import PriceTag from "@/components/ui/PriceTag";
 
 import DiscountIcon from "@/assets/icons/discount.svg";
 
@@ -34,7 +34,7 @@ export default function OptionChoices({
     getChoiceQuantity,
     optionLimitReached,
     selectedChoice,
-  } = useDishOrderContext();
+  } = useOrderContext();
 
   const CHOICE_PRICE = choice.price || choice.additionalPrice;
   const CHOICE_QTY = getChoiceQuantity(choice.id);

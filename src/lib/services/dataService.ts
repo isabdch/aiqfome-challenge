@@ -65,28 +65,7 @@ export async function getFullRestaurantDetails(
 
   if (!restaurant) return undefined;
 
-  const categoriesForRestaurant = await getCategoriesByRestaurantId(
-    restaurantId
-  );
-
-  const categoriesWithDishes = await Promise.all(
-    categoriesForRestaurant.map(async (category) => {
-      const dishesForCategory = await getDishesByCategoryId(category.id);
-
-      const dishesWithDetails = await Promise.all(
-        dishesForCategory.map((dish) => getDishWithDetails(dish.id))
-      );
-
-      return {
-        ...category,
-        dishes: dishesWithDetails.filter(
-          (dish) => dish !== undefined
-        ) as (Dish & {
-          options?: (Option & { choices?: Choice[] })[];
-        })[],
-      };
-    })
-  );
+  const categoriesWithDishes = await getCategoriesWithDishes(restaurantId);
 
   return { ...restaurant, categories: categoriesWithDishes };
 }
@@ -147,15 +126,7 @@ export async function getDishWithDetails(
 
   if (!dish) return undefined;
 
-  const optionsForDish = await getOptionsByDishId(dishId);
-
-  const optionsWithChoices = await Promise.all(
-    optionsForDish.map(async (option) => {
-      const choicesForOption = await getChoicesByOptionId(option.id);
-
-      return { ...option, choices: choicesForOption };
-    })
-  );
+  const optionsWithChoices = await getOptionsByDishIdWithDetails(dishId);
 
   return { ...dish, options: optionsWithChoices };
 }

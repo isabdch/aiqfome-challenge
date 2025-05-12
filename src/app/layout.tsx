@@ -7,7 +7,7 @@ import "@/styles/globals.css";
 import { generatePageMetadata } from "@/lib/metadata";
 
 import { SearchProvider } from "@/contexts/SearchContext";
-import { DishOrderProvider } from "@/contexts/DishOrderContext";
+import { OrderProvider } from "@/contexts/OrderContext";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -30,13 +30,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${nunito.variable} antialiased flex flex-col`}>
-        <DishOrderProvider>
+        <OrderProvider>
           <SearchProvider>
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
           </SearchProvider>
-        </DishOrderProvider>
+        </OrderProvider>
       </body>
     </html>
   );

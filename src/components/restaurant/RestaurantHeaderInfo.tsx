@@ -11,8 +11,8 @@ import { deliveryFeeStatus, formatDeliveryText } from "@/utils/delivery";
 
 import type { Restaurant } from "@/types/restaurants";
 
-import Badge from "@/components/core/Badge";
-import ArrowIcon from "@/components/core/ArrowIcon";
+import Badge from "@/components/ui/Badge";
+import ArrowIcon from "@/components/ui/ArrowIcon";
 
 import StarIcon from "@/assets/icons/star.svg";
 import MotorcycleIcon from "@/assets/icons/motorcycle.svg";

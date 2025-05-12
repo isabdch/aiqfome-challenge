@@ -4,7 +4,7 @@ import { useSearch } from "@/contexts/SearchContext";
 
 import { useRestaurantsData } from "@/hooks/useRestaurantsData";
 
-import Banner from "@/components/core/Banner";
+import Banner from "@/components/ui/Banner";
 import RestaurantsList from "@/components/restaurant/RestaurantsList";
 
 export default function Home() {

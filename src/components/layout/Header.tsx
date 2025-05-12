@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { useSearch } from "@/contexts/SearchContext";
 
-import Input from "@/components/core/Input";
+import Input from "@/components/ui/Input";
 
 import LogoIcon from "@/assets/icons/logo.svg";
 import ProfileIcon from "@/assets/icons/profile.svg";

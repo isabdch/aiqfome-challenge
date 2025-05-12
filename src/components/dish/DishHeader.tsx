@@ -2,7 +2,7 @@ import type { Dish } from "@/types/dishes";
 
 import { dishHasPriceOptions } from "@/utils/dish";
 
-import PriceTag from "@/components/core/PriceTag";
+import PriceTag from "@/components/ui/PriceTag";
 
 type DishHeaderProps = {
   dish: Dish;

@@ -6,7 +6,7 @@ import type { Dish, SelectedDish } from "@/types/dishes";
 import type { Choice, SelectedChoice } from "@/types/choices";
 import { type Option, ItemOptionType } from "@/types/options";
 
-export type UseDishOrderReturn = {
+export type UseOrderReturn = {
   selectedDishes: SelectedDish[];
   selectedChoices: SelectedChoice[];
   handleDish: (dish: Dish, quantity: number) => void;
@@ -25,7 +25,7 @@ export type UseDishOrderReturn = {
   optionLimitReached: (option: Option) => boolean;
   getDishPrice: (dish?: SelectedDish) => number;
   getTotalPrice: () => number;
-  checkDishRequirements: (dishId: number) => Promise<boolean>;
+  checkDishRequirements: (dishId: number) => boolean;
   getSelectedDishesWithChoices: () => SelectedDish[];
   handleDishObservations: (dish: Dish, observations: string) => void;
 };
@@ -33,7 +33,7 @@ export type UseDishOrderReturn = {
 const SELECTED_DISHES_KEY = "selectedDishes";
 const SELECTED_CHOICES_KEY = "selectedChoices";
 
-export function useDishOrder(): UseDishOrderReturn {
+export function useOrder(): UseOrderReturn {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [selectedDishes, setSelectedDishes] = useState<SelectedDish[]>([]);
   const [selectedChoices, setSelectedChoices] = useState<SelectedChoice[]>([]);
@@ -244,7 +244,7 @@ export function useDishOrder(): UseDishOrderReturn {
     return totalQuantityForOption >= limit;
   }
 
-  async function checkDishRequirements(dishId: number): Promise<boolean> {
+  function checkDishRequirements(dishId: number): boolean {
     if (!dishId) return false;
 
     const dish = selectedDishes.find((d) => d.id === dishId);

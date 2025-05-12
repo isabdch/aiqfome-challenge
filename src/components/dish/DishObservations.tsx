@@ -1,17 +1,17 @@
 "use client";
 
-import { useDishOrderContext } from "@/contexts/DishOrderContext";
+import { useOrderContext } from "@/contexts/OrderContext";
 
 import type { Dish } from "@/types/dishes";
 
-import Textarea from "@/components/core/Textarea";
+import Textarea from "@/components/ui/Textarea";
 
 type DishObservationsProps = {
   dish: Dish;
 };
 
 export default function DishObservations({ dish }: DishObservationsProps) {
-  const { handleDishObservations, selectedDishes } = useDishOrderContext();
+  const { handleDishObservations, selectedDishes } = useOrderContext();
 
   const currentObservation =
     selectedDishes.find((d) => d.id === dish.id)?.observations || "";

@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 
 import { useFooter } from "@/hooks/useFooter";
 
-import Button from "@/components/core/Button";
+import Button from "@/components/ui/Button";
 import TicketFooter from "@/components/ticket/TicketFooter";
 
 export default function Footer() {

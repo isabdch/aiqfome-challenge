@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { getDishWithDetails } from "@/lib/services/dataService";
 import { generatePageMetadata, generateNotFoundMetadata } from "@/lib/metadata";
 
-import Banner from "@/components/core/Banner";
+import Banner from "@/components/ui/Banner";
 import DishHeader from "@/components/dish/DishHeader";
 import DishOption from "@/components/dish/DishOption";
 import DishQuantity from "@/components/dish/DishQuantity";

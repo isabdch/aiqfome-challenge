@@ -6,7 +6,7 @@ import { useCategoriesStates } from "@/hooks/useCategoriesStates";
 
 import type { Category } from "@/types/categories";
 
-import Collapse from "@/components/core/Collapse";
+import Collapse from "@/components/ui/Collapse";
 import CategoryHeader from "@/components/category/CategoryHeader";
 import CategoryDishCard from "@/components/category/CategoryDishCard";
 

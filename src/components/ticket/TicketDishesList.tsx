@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-import { useDishOrderContext } from "@/contexts/DishOrderContext";
+import { useOrderContext } from "@/contexts/OrderContext";
 
 import type { Restaurant } from "@/types/restaurants";
 
@@ -17,7 +17,7 @@ export default function TicketDishesList({
 }: TicketDishesListProps) {
   const router = useRouter();
 
-  const { getSelectedDishesWithChoices } = useDishOrderContext();
+  const { getSelectedDishesWithChoices } = useOrderContext();
 
   const selectedDishesWithSelectedChoices = getSelectedDishesWithChoices();
 

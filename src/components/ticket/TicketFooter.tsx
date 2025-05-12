@@ -1,11 +1,11 @@
-import { useDishOrderContext } from "@/contexts/DishOrderContext";
+import { useOrderContext } from "@/contexts/OrderContext";
 
 import { formatCurrency } from "@/utils/currency";
 
-import Button from "@/components/core/Button";
+import Button from "@/components/ui/Button";
 
 export default function TicketFooter() {
-  const { getTotalPrice } = useDishOrderContext();
+  const { getTotalPrice } = useOrderContext();
 
   const totalPrice = getTotalPrice();
 

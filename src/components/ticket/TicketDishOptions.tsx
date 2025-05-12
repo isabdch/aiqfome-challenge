@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import type { Option } from "@/types/options";
 import type { SelectedChoice } from "@/types/choices";
 
-import PriceTag from "@/components/core/PriceTag";
+import PriceTag from "@/components/ui/PriceTag";
 
 type TicketDishOptionsProps = {
   options: Option[];

@@ -1,6 +1,6 @@
 import { formatDishOptionLabel } from "@/utils/dish";
 
-import Badge from "@/components/core/Badge";
+import Badge from "@/components/ui/Badge";
 import OptionChoices from "@/components/option/OptionChoices";
 
 import type { Dish } from "@/types/dishes";

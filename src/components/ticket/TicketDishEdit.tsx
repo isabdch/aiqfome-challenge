@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 
-import { useDishOrderContext } from "@/contexts/DishOrderContext";
+import { useOrderContext } from "@/contexts/OrderContext";
 
 import type { SelectedDish } from "@/types/dishes";
 import type { Restaurant } from "@/types/restaurants";
 
-import Button from "@/components/core/Button";
-import Counter from "@/components/core/Counter";
+import Button from "@/components/ui/Button";
+import Counter from "@/components/ui/Counter";
 
 import EditPencilIcon from "@/assets/icons/edit-pencil.svg";
 
@@ -21,7 +21,7 @@ export default function TicketDishEdit({
   restaurant,
   dish,
 }: TicketDishEditProps) {
-  const { handleDish } = useDishOrderContext();
+  const { handleDish } = useOrderContext();
 
   return (
     <div className="flex justify-end items-center gap-lg">

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 import type { Restaurant } from "@/types/restaurants";
 
-import Button from "@/components/core/Button";
-import ArrowIcon from "@/components/core/ArrowIcon";
+import Button from "@/components/ui/Button";
+import ArrowIcon from "@/components/ui/ArrowIcon";
 import RestaurantHeaderInfo from "@/components/restaurant/RestaurantHeaderInfo";
 
 import ShareIcon from "@/assets/icons/share.svg";
