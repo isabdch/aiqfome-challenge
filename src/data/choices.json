@@ -158,5 +158,2665 @@
     "price": null,
     "originalPrice": null,
     "additionalPrice": 6
+  },
+  {
+    "id": 17,
+    "dishId": 6,
+    "optionId": 6,
+    "name": "quente",
+    "basePrice": true,
+    "price": 8.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 18,
+    "dishId": 6,
+    "optionId": 6,
+    "name": "temperatura ambiente",
+    "basePrice": true,
+    "price": 8.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 19,
+    "dishId": 6,
+    "optionId": 7,
+    "name": "shoyu extra",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1.5
+  },
+  {
+    "id": 20,
+    "dishId": 6,
+    "optionId": 7,
+    "name": "cream cheese",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 21,
+    "dishId": 6,
+    "optionId": 7,
+    "name": "ovas de salmão",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5
+  },
+  {
+    "id": 22,
+    "dishId": 7,
+    "optionId": 8,
+    "name": "com gelo",
+    "basePrice": true,
+    "price": 6.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 23,
+    "dishId": 7,
+    "optionId": 8,
+    "name": "sem gelo",
+    "basePrice": true,
+    "price": 6.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 24,
+    "dishId": 7,
+    "optionId": 9,
+    "name": "gelado",
+    "basePrice": true,
+    "price": 6.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 25,
+    "dishId": 7,
+    "optionId": 9,
+    "name": "natural",
+    "basePrice": true,
+    "price": 6.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 26,
+    "dishId": 8,
+    "optionId": 10,
+    "name": "pequeno",
+    "basePrice": true,
+    "price": 9.9,
+    "originalPrice": 12.9,
+    "additionalPrice": null
+  },
+  {
+    "id": 27,
+    "dishId": 8,
+    "optionId": 10,
+    "name": "médio",
+    "basePrice": true,
+    "price": 12.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 28,
+    "dishId": 8,
+    "optionId": 10,
+    "name": "grande",
+    "basePrice": true,
+    "price": 16.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 29,
+    "dishId": 8,
+    "optionId": 11,
+    "name": "calda extra",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 30,
+    "dishId": 8,
+    "optionId": 11,
+    "name": "frutas frescas",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 4
+  },
+  {
+    "id": 31,
+    "dishId": 9,
+    "optionId": 12,
+    "name": "média (6 fatias)",
+    "basePrice": true,
+    "price": 45.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 32,
+    "dishId": 9,
+    "optionId": 12,
+    "name": "grande (8 fatias)",
+    "basePrice": true,
+    "price": 55.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 33,
+    "dishId": 9,
+    "optionId": 12,
+    "name": "família (12 fatias)",
+    "basePrice": true,
+    "price": 65.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 34,
+    "dishId": 9,
+    "optionId": 13,
+    "name": "sem borda",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 35,
+    "dishId": 9,
+    "optionId": 13,
+    "name": "borda de catupiry",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5
+  },
+  {
+    "id": 36,
+    "dishId": 9,
+    "optionId": 13,
+    "name": "borda de cheddar",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5
+  },
+  {
+    "id": 37,
+    "dishId": 10,
+    "optionId": 14,
+    "name": "média (6 fatias)",
+    "basePrice": true,
+    "price": 52.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 38,
+    "dishId": 10,
+    "optionId": 14,
+    "name": "grande (8 fatias)",
+    "basePrice": true,
+    "price": 62.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 39,
+    "dishId": 10,
+    "optionId": 14,
+    "name": "família (12 fatias)",
+    "basePrice": true,
+    "price": 72.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 40,
+    "dishId": 10,
+    "optionId": 15,
+    "name": "bacon extra",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 4
+  },
+  {
+    "id": 41,
+    "dishId": 10,
+    "optionId": 15,
+    "name": "cebola caramelizada",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 42,
+    "dishId": 10,
+    "optionId": 15,
+    "name": "tomate seco",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5
+  },
+  {
+    "id": 43,
+    "dishId": 10,
+    "optionId": 15,
+    "name": "azeitonas",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 44,
+    "dishId": 11,
+    "optionId": 16,
+    "name": "individual",
+    "basePrice": true,
+    "price": 38.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 45,
+    "dishId": 11,
+    "optionId": 16,
+    "name": "média (2-3 pessoas)",
+    "basePrice": true,
+    "price": 58.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 46,
+    "dishId": 11,
+    "optionId": 16,
+    "name": "família (4-5 pessoas)",
+    "basePrice": true,
+    "price": 78.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 47,
+    "dishId": 11,
+    "optionId": 17,
+    "name": "molho à bolonhesa",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 48,
+    "dishId": 11,
+    "optionId": 17,
+    "name": "molho quatro queijos",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5
+  },
+  {
+    "id": 49,
+    "dishId": 11,
+    "optionId": 17,
+    "name": "molho branco",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 50,
+    "dishId": 12,
+    "optionId": 18,
+    "name": "1",
+    "basePrice": true,
+    "price": 18.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 51,
+    "dishId": 12,
+    "optionId": 18,
+    "name": "2",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 18.9
+  },
+  {
+    "id": 52,
+    "dishId": 12,
+    "optionId": 19,
+    "name": "queijo ralado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 53,
+    "dishId": 12,
+    "optionId": 19,
+    "name": "pimenta calabresa",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 54,
+    "dishId": 12,
+    "optionId": 19,
+    "name": "orégano extra",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 0.5
+  },
+  {
+    "id": 55,
+    "dishId": 13,
+    "optionId": 20,
+    "name": "pequeno",
+    "basePrice": true,
+    "price": 25.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 56,
+    "dishId": 13,
+    "optionId": 20,
+    "name": "médio",
+    "basePrice": true,
+    "price": 32.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 57,
+    "dishId": 13,
+    "optionId": 20,
+    "name": "grande",
+    "basePrice": true,
+    "price": 39.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 58,
+    "dishId": 13,
+    "optionId": 21,
+    "name": "sem picante",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 59,
+    "dishId": 13,
+    "optionId": 21,
+    "name": "leve",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 60,
+    "dishId": 13,
+    "optionId": 21,
+    "name": "médio",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 61,
+    "dishId": 13,
+    "optionId": 21,
+    "name": "extra picante",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 62,
+    "dishId": 14,
+    "optionId": 22,
+    "name": "pequeno",
+    "basePrice": true,
+    "price": 32.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 63,
+    "dishId": 14,
+    "optionId": 22,
+    "name": "médio",
+    "basePrice": true,
+    "price": 37.9,
+    "originalPrice": 40.8,
+    "additionalPrice": null
+  },
+  {
+    "id": 64,
+    "dishId": 14,
+    "optionId": 22,
+    "name": "grande",
+    "basePrice": true,
+    "price": 42.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 65,
+    "dishId": 14,
+    "optionId": 23,
+    "name": "coca-cola",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 66,
+    "dishId": 14,
+    "optionId": 23,
+    "name": "guaraná",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 67,
+    "dishId": 14,
+    "optionId": 23,
+    "name": "sprite",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 68,
+    "dishId": 15,
+    "optionId": 24,
+    "name": "8 peças",
+    "basePrice": true,
+    "price": 24.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 69,
+    "dishId": 15,
+    "optionId": 24,
+    "name": "16 peças",
+    "basePrice": true,
+    "price": 44.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 70,
+    "dishId": 15,
+    "optionId": 24,
+    "name": "24 peças",
+    "basePrice": true,
+    "price": 64.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 71,
+    "dishId": 15,
+    "optionId": 25,
+    "name": "shoyu",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 72,
+    "dishId": 15,
+    "optionId": 25,
+    "name": "molho agridoce",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 73,
+    "dishId": 15,
+    "optionId": 25,
+    "name": "molho teriyaki",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 74,
+    "dishId": 16,
+    "optionId": 26,
+    "name": "chocolate",
+    "basePrice": true,
+    "price": 15.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 75,
+    "dishId": 16,
+    "optionId": 26,
+    "name": "morango",
+    "basePrice": true,
+    "price": 15.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 76,
+    "dishId": 16,
+    "optionId": 26,
+    "name": "matchá",
+    "basePrice": true,
+    "price": 17.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 77,
+    "dishId": 16,
+    "optionId": 26,
+    "name": "doce de leite",
+    "basePrice": true,
+    "price": 15.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 78,
+    "dishId": 16,
+    "optionId": 27,
+    "name": "1",
+    "basePrice": true,
+    "price": 15.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 79,
+    "dishId": 16,
+    "optionId": 27,
+    "name": "2",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 15.9
+  },
+  {
+    "id": 80,
+    "dishId": 17,
+    "optionId": 28,
+    "name": "granola",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 81,
+    "dishId": 17,
+    "optionId": 28,
+    "name": "banana",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 82,
+    "dishId": 17,
+    "optionId": 28,
+    "name": "leite condensado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2.5
+  },
+  {
+    "id": 83,
+    "dishId": 17,
+    "optionId": 28,
+    "name": "leite em pó",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 84,
+    "dishId": 17,
+    "optionId": 28,
+    "name": "paçoca",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2.5
+  },
+  {
+    "id": 85,
+    "dishId": 17,
+    "optionId": 29,
+    "name": "300ml",
+    "basePrice": true,
+    "price": 14.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 86,
+    "dishId": 17,
+    "optionId": 29,
+    "name": "500ml",
+    "basePrice": true,
+    "price": 18.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 87,
+    "dishId": 17,
+    "optionId": 29,
+    "name": "700ml",
+    "basePrice": true,
+    "price": 22.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 88,
+    "dishId": 18,
+    "optionId": 30,
+    "name": "morango",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 89,
+    "dishId": 18,
+    "optionId": 30,
+    "name": "banana",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 90,
+    "dishId": 18,
+    "optionId": 30,
+    "name": "kiwi",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 91,
+    "dishId": 18,
+    "optionId": 30,
+    "name": "manga",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 92,
+    "dishId": 18,
+    "optionId": 30,
+    "name": "abacaxi",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 93,
+    "dishId": 18,
+    "optionId": 31,
+    "name": "granola",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 94,
+    "dishId": 18,
+    "optionId": 31,
+    "name": "leite condensado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 95,
+    "dishId": 18,
+    "optionId": 31,
+    "name": "chocolate granulado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 96,
+    "dishId": 18,
+    "optionId": 31,
+    "name": "paçoca",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 97,
+    "dishId": 19,
+    "optionId": 32,
+    "name": "baunilha",
+    "basePrice": true,
+    "price": 8.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 98,
+    "dishId": 19,
+    "optionId": 32,
+    "name": "chocolate",
+    "basePrice": true,
+    "price": 8.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 99,
+    "dishId": 19,
+    "optionId": 32,
+    "name": "morango",
+    "basePrice": true,
+    "price": 8.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 100,
+    "dishId": 19,
+    "optionId": 32,
+    "name": "flocos",
+    "basePrice": true,
+    "price": 8.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 101,
+    "dishId": 19,
+    "optionId": 33,
+    "name": "casquinha",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 102,
+    "dishId": 19,
+    "optionId": 33,
+    "name": "copo",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 103,
+    "dishId": 20,
+    "optionId": 34,
+    "name": "1",
+    "basePrice": true,
+    "price": 3.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 104,
+    "dishId": 20,
+    "optionId": 34,
+    "name": "2",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3.5
+  },
+  {
+    "id": 105,
+    "dishId": 20,
+    "optionId": 34,
+    "name": "3",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 7
+  },
+  {
+    "id": 106,
+    "dishId": 20,
+    "optionId": 35,
+    "name": "tradicional",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 107,
+    "dishId": 20,
+    "optionId": 35,
+    "name": "low carb",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1.5
+  },
+  {
+    "id": 108,
+    "dishId": 21,
+    "optionId": 36,
+    "name": "1",
+    "basePrice": true,
+    "price": 1.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 109,
+    "dishId": 21,
+    "optionId": 36,
+    "name": "2",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1.5
+  },
+  {
+    "id": 110,
+    "dishId": 21,
+    "optionId": 36,
+    "name": "5",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 6
+  },
+  {
+    "id": 111,
+    "dishId": 21,
+    "optionId": 36,
+    "name": "10",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 13.5
+  },
+  {
+    "id": 112,
+    "dishId": 21,
+    "optionId": 37,
+    "name": "sim",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 113,
+    "dishId": 21,
+    "optionId": 37,
+    "name": "não",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 114,
+    "dishId": 22,
+    "optionId": 38,
+    "name": "fatia",
+    "basePrice": true,
+    "price": 7.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 115,
+    "dishId": 22,
+    "optionId": 38,
+    "name": "bolo inteiro pequeno",
+    "basePrice": true,
+    "price": 39.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 116,
+    "dishId": 22,
+    "optionId": 38,
+    "name": "bolo inteiro médio",
+    "basePrice": true,
+    "price": 59.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 117,
+    "dishId": 22,
+    "optionId": 39,
+    "name": "calda extra",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1.5
+  },
+  {
+    "id": 118,
+    "dishId": 22,
+    "optionId": 39,
+    "name": "chantilly",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 119,
+    "dishId": 22,
+    "optionId": 39,
+    "name": "granulado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 120,
+    "dishId": 23,
+    "optionId": 40,
+    "name": "1",
+    "basePrice": true,
+    "price": 5.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 121,
+    "dishId": 23,
+    "optionId": 40,
+    "name": "2",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5.9
+  },
+  {
+    "id": 122,
+    "dishId": 23,
+    "optionId": 40,
+    "name": "3",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 11.8
+  },
+  {
+    "id": 123,
+    "dishId": 23,
+    "optionId": 41,
+    "name": "quente",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 124,
+    "dishId": 23,
+    "optionId": 41,
+    "name": "temperatura ambiente",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 125,
+    "dishId": 24,
+    "optionId": 42,
+    "name": "pequeno",
+    "basePrice": true,
+    "price": 4.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 126,
+    "dishId": 24,
+    "optionId": 42,
+    "name": "médio",
+    "basePrice": true,
+    "price": 6.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 127,
+    "dishId": 24,
+    "optionId": 42,
+    "name": "grande",
+    "basePrice": true,
+    "price": 8.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 128,
+    "dishId": 24,
+    "optionId": 43,
+    "name": "leite",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 129,
+    "dishId": 24,
+    "optionId": 43,
+    "name": "chantilly",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 130,
+    "dishId": 24,
+    "optionId": 43,
+    "name": "canela",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 0.5
+  },
+  {
+    "id": 131,
+    "dishId": 24,
+    "optionId": 43,
+    "name": "chocolate em pó",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 132,
+    "dishId": 25,
+    "optionId": 44,
+    "name": "não picante",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 133,
+    "dishId": 25,
+    "optionId": 44,
+    "name": "levemente picante",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 134,
+    "dishId": 25,
+    "optionId": 44,
+    "name": "picante",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 135,
+    "dishId": 25,
+    "optionId": 44,
+    "name": "extra picante",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 136,
+    "dishId": 25,
+    "optionId": 45,
+    "name": "guacamole",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 137,
+    "dishId": 25,
+    "optionId": 45,
+    "name": "pico de gallo",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 138,
+    "dishId": 25,
+    "optionId": 45,
+    "name": "sour cream",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 139,
+    "dishId": 25,
+    "optionId": 45,
+    "name": "queijo cheddar",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2.5
+  },
+  {
+    "id": 140,
+    "dishId": 26,
+    "optionId": 46,
+    "name": "pequeno",
+    "basePrice": true,
+    "price": 18.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 141,
+    "dishId": 26,
+    "optionId": 46,
+    "name": "médio",
+    "basePrice": true,
+    "price": 22.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 142,
+    "dishId": 26,
+    "optionId": 46,
+    "name": "grande",
+    "basePrice": true,
+    "price": 26.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 143,
+    "dishId": 26,
+    "optionId": 47,
+    "name": "guacamole",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 4
+  },
+  {
+    "id": 144,
+    "dishId": 26,
+    "optionId": 47,
+    "name": "bacon",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 145,
+    "dishId": 26,
+    "optionId": 47,
+    "name": "sour cream",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 146,
+    "dishId": 27,
+    "optionId": 48,
+    "name": "pequeno",
+    "basePrice": true,
+    "price": 19.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 147,
+    "dishId": 27,
+    "optionId": 48,
+    "name": "médio",
+    "basePrice": true,
+    "price": 29.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 148,
+    "dishId": 27,
+    "optionId": 48,
+    "name": "grande",
+    "basePrice": true,
+    "price": 39.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 149,
+    "dishId": 27,
+    "optionId": 49,
+    "name": "guacamole",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 150,
+    "dishId": 27,
+    "optionId": 49,
+    "name": "cheddar",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 151,
+    "dishId": 27,
+    "optionId": 49,
+    "name": "carne moída",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5
+  },
+  {
+    "id": 152,
+    "dishId": 27,
+    "optionId": 49,
+    "name": "pico de gallo",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 153,
+    "dishId": 27,
+    "optionId": 49,
+    "name": "jalapeños",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 154,
+    "dishId": 28,
+    "optionId": 50,
+    "name": "carne",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 155,
+    "dishId": 28,
+    "optionId": 50,
+    "name": "frango",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 156,
+    "dishId": 28,
+    "optionId": 50,
+    "name": "vegetariano",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 157,
+    "dishId": 28,
+    "optionId": 51,
+    "name": "coca-cola",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 158,
+    "dishId": 28,
+    "optionId": 51,
+    "name": "sprite",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 159,
+    "dishId": 28,
+    "optionId": 51,
+    "name": "guaraná",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 160,
+    "dishId": 29,
+    "optionId": 52,
+    "name": "coxa",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 161,
+    "dishId": 29,
+    "optionId": 52,
+    "name": "peito",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 162,
+    "dishId": 29,
+    "optionId": 52,
+    "name": "asa",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 163,
+    "dishId": 29,
+    "optionId": 53,
+    "name": "barbecue",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 164,
+    "dishId": 29,
+    "optionId": 53,
+    "name": "picante",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 165,
+    "dishId": 29,
+    "optionId": 53,
+    "name": "maionese da casa",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 166,
+    "dishId": 30,
+    "optionId": 54,
+    "name": "original",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 167,
+    "dishId": 30,
+    "optionId": 54,
+    "name": "apimentado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 168,
+    "dishId": 30,
+    "optionId": 54,
+    "name": "barbecue",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 169,
+    "dishId": 30,
+    "optionId": 55,
+    "name": "coca-cola",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 170,
+    "dishId": 30,
+    "optionId": 55,
+    "name": "fanta",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 171,
+    "dishId": 30,
+    "optionId": 55,
+    "name": "sprite",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 172,
+    "dishId": 31,
+    "optionId": 56,
+    "name": "pão normal",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 173,
+    "dishId": 31,
+    "optionId": 56,
+    "name": "pão integral",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 174,
+    "dishId": 31,
+    "optionId": 56,
+    "name": "pão australiano",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 175,
+    "dishId": 31,
+    "optionId": 57,
+    "name": "bacon",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 176,
+    "dishId": 31,
+    "optionId": 57,
+    "name": "cheddar",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 177,
+    "dishId": 31,
+    "optionId": 57,
+    "name": "cebola caramelizada",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 178,
+    "dishId": 31,
+    "optionId": 57,
+    "name": "molho especial",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 179,
+    "dishId": 32,
+    "optionId": 58,
+    "name": "pequena",
+    "basePrice": true,
+    "price": 9.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 180,
+    "dishId": 32,
+    "optionId": 58,
+    "name": "média",
+    "basePrice": true,
+    "price": 14.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 181,
+    "dishId": 32,
+    "optionId": 58,
+    "name": "grande",
+    "basePrice": true,
+    "price": 19.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 182,
+    "dishId": 32,
+    "optionId": 59,
+    "name": "sal",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 183,
+    "dishId": 32,
+    "optionId": 59,
+    "name": "páprica",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 0.5
+  },
+  {
+    "id": 184,
+    "dishId": 32,
+    "optionId": 59,
+    "name": "cheddar",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 185,
+    "dishId": 33,
+    "optionId": 60,
+    "name": "mal passado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 186,
+    "dishId": 33,
+    "optionId": 60,
+    "name": "ao ponto",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 187,
+    "dishId": 33,
+    "optionId": 60,
+    "name": "bem passado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 188,
+    "dishId": 33,
+    "optionId": 61,
+    "name": "bacon",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 189,
+    "dishId": 33,
+    "optionId": 61,
+    "name": "queijo cheddar",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 190,
+    "dishId": 33,
+    "optionId": 61,
+    "name": "ovo frito",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 191,
+    "dishId": 33,
+    "optionId": 61,
+    "name": "cebola caramelizada",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 192,
+    "dishId": 33,
+    "optionId": 61,
+    "name": "molho especial",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 193,
+    "dishId": 34,
+    "optionId": 62,
+    "name": "pequena",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": -2
+  },
+  {
+    "id": 194,
+    "dishId": 34,
+    "optionId": 62,
+    "name": "média",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 195,
+    "dishId": 34,
+    "optionId": 62,
+    "name": "grande",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 196,
+    "dishId": 34,
+    "optionId": 63,
+    "name": "coca-cola",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 197,
+    "dishId": 34,
+    "optionId": 63,
+    "name": "guaraná",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 198,
+    "dishId": 34,
+    "optionId": 63,
+    "name": "sprite",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 199,
+    "dishId": 34,
+    "optionId": 63,
+    "name": "suco de laranja",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 200,
+    "dishId": 35,
+    "optionId": 64,
+    "name": "pequeno",
+    "basePrice": true,
+    "price": 11.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 201,
+    "dishId": 35,
+    "optionId": 64,
+    "name": "médio",
+    "basePrice": true,
+    "price": 15.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 202,
+    "dishId": 35,
+    "optionId": 64,
+    "name": "grande",
+    "basePrice": true,
+    "price": 19.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 203,
+    "dishId": 35,
+    "optionId": 65,
+    "name": "calda de chocolate",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 204,
+    "dishId": 35,
+    "optionId": 65,
+    "name": "chantilly",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 205,
+    "dishId": 35,
+    "optionId": 65,
+    "name": "granulado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 206,
+    "dishId": 36,
+    "optionId": 66,
+    "name": "caramelo",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 207,
+    "dishId": 36,
+    "optionId": 66,
+    "name": "chocolate",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 208,
+    "dishId": 36,
+    "optionId": 66,
+    "name": "morango",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 209,
+    "dishId": 36,
+    "optionId": 67,
+    "name": "amendoim",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 210,
+    "dishId": 36,
+    "optionId": 67,
+    "name": "chantilly",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 2
+  },
+  {
+    "id": 211,
+    "dishId": 36,
+    "optionId": 67,
+    "name": "cereja",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 212,
+    "dishId": 37,
+    "optionId": 68,
+    "name": "individual",
+    "basePrice": true,
+    "price": 36.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 213,
+    "dishId": 37,
+    "optionId": 68,
+    "name": "média (2 pessoas)",
+    "basePrice": true,
+    "price": 56.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 214,
+    "dishId": 37,
+    "optionId": 68,
+    "name": "grande (3-4 pessoas)",
+    "basePrice": true,
+    "price": 76.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 215,
+    "dishId": 37,
+    "optionId": 69,
+    "name": "não",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 216,
+    "dishId": 37,
+    "optionId": 69,
+    "name": "parmesão",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5
+  },
+  {
+    "id": 217,
+    "dishId": 37,
+    "optionId": 69,
+    "name": "mussarela",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 4
+  },
+  {
+    "id": 218,
+    "dishId": 38,
+    "optionId": 70,
+    "name": "individual",
+    "basePrice": true,
+    "price": 42.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 219,
+    "dishId": 38,
+    "optionId": 70,
+    "name": "média (2-3 pessoas)",
+    "basePrice": true,
+    "price": 62.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 220,
+    "dishId": 38,
+    "optionId": 70,
+    "name": "grande (4-5 pessoas)",
+    "basePrice": true,
+    "price": 82.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 221,
+    "dishId": 38,
+    "optionId": 71,
+    "name": "bacon",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5
+  },
+  {
+    "id": 222,
+    "dishId": 38,
+    "optionId": 71,
+    "name": "presunto",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 4
+  },
+  {
+    "id": 223,
+    "dishId": 38,
+    "optionId": 71,
+    "name": "queijo extra",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 6
+  },
+  {
+    "id": 224,
+    "dishId": 39,
+    "optionId": 72,
+    "name": "individual",
+    "basePrice": true,
+    "price": 45.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 225,
+    "dishId": 39,
+    "optionId": 72,
+    "name": "média (2 pessoas)",
+    "basePrice": true,
+    "price": 65.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 226,
+    "dishId": 39,
+    "optionId": 72,
+    "name": "grande (3-4 pessoas)",
+    "basePrice": true,
+    "price": 85.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 227,
+    "dishId": 39,
+    "optionId": 73,
+    "name": "trufas",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 8
+  },
+  {
+    "id": 228,
+    "dishId": 39,
+    "optionId": 73,
+    "name": "shimeji extra",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 6
+  },
+  {
+    "id": 229,
+    "dishId": 39,
+    "optionId": 73,
+    "name": "parmesão",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 4
+  },
+  {
+    "id": 230,
+    "dishId": 40,
+    "optionId": 74,
+    "name": "1",
+    "basePrice": true,
+    "price": 22.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 231,
+    "dishId": 40,
+    "optionId": 74,
+    "name": "2",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 22.9
+  },
+  {
+    "id": 232,
+    "dishId": 40,
+    "optionId": 74,
+    "name": "4",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 68.7
+  },
+  {
+    "id": 233,
+    "dishId": 40,
+    "optionId": 75,
+    "name": "manjericão",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 234,
+    "dishId": 40,
+    "optionId": 75,
+    "name": "azeite",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 235,
+    "dishId": 40,
+    "optionId": 75,
+    "name": "sal",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 236,
+    "dishId": 41,
+    "optionId": 76,
+    "name": "mal passado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 237,
+    "dishId": 41,
+    "optionId": 76,
+    "name": "ao ponto",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 238,
+    "dishId": 41,
+    "optionId": 76,
+    "name": "ao ponto para bem",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 239,
+    "dishId": 41,
+    "optionId": 76,
+    "name": "bem passado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 240,
+    "dishId": 41,
+    "optionId": 77,
+    "name": "batata frita",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 241,
+    "dishId": 41,
+    "optionId": 77,
+    "name": "purê de batata",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 242,
+    "dishId": 41,
+    "optionId": 77,
+    "name": "arroz",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 243,
+    "dishId": 41,
+    "optionId": 77,
+    "name": "salada",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 244,
+    "dishId": 42,
+    "optionId": 78,
+    "name": "especial da casa",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 245,
+    "dishId": 42,
+    "optionId": 78,
+    "name": "barbecue",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 246,
+    "dishId": 42,
+    "optionId": 78,
+    "name": "ranch",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 247,
+    "dishId": 42,
+    "optionId": 79,
+    "name": "meia",
+    "basePrice": true,
+    "price": 29.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 248,
+    "dishId": 42,
+    "optionId": 79,
+    "name": "inteira",
+    "basePrice": true,
+    "price": 44.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 249,
+    "dishId": 42,
+    "optionId": 79,
+    "name": "dupla",
+    "basePrice": true,
+    "price": 79.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 250,
+    "dishId": 43,
+    "optionId": 80,
+    "name": "pequeno",
+    "basePrice": true,
+    "price": 69.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 251,
+    "dishId": 43,
+    "optionId": 80,
+    "name": "médio",
+    "basePrice": true,
+    "price": 84.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 252,
+    "dishId": 43,
+    "optionId": 80,
+    "name": "grande",
+    "basePrice": true,
+    "price": 99.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 253,
+    "dishId": 43,
+    "optionId": 81,
+    "name": "barbecue extra",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 254,
+    "dishId": 43,
+    "optionId": 81,
+    "name": "molho picante",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 255,
+    "dishId": 43,
+    "optionId": 81,
+    "name": "honey mustard",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 256,
+    "dishId": 44,
+    "optionId": 82,
+    "name": "individual",
+    "basePrice": true,
+    "price": 34.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 257,
+    "dishId": 44,
+    "optionId": 82,
+    "name": "para compartilhar (2 pessoas)",
+    "basePrice": true,
+    "price": 59.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 258,
+    "dishId": 44,
+    "optionId": 82,
+    "name": "grande (4 pessoas)",
+    "basePrice": true,
+    "price": 99.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 259,
+    "dishId": 44,
+    "optionId": 83,
+    "name": "calda extra de caramelo",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 3
+  },
+  {
+    "id": 260,
+    "dishId": 44,
+    "optionId": 83,
+    "name": "sorvete extra",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 5
+  },
+  {
+    "id": 261,
+    "dishId": 44,
+    "optionId": 83,
+    "name": "nozes",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 4
+  },
+  {
+    "id": 262,
+    "dishId": 45,
+    "optionId": 84,
+    "name": "quente",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 263,
+    "dishId": 45,
+    "optionId": 84,
+    "name": "gelado",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 264,
+    "dishId": 45,
+    "optionId": 85,
+    "name": "mel",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 265,
+    "dishId": 45,
+    "optionId": 85,
+    "name": "limão",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 0.5
+  },
+  {
+    "id": 266,
+    "dishId": 45,
+    "optionId": 85,
+    "name": "gengibre",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 267,
+    "dishId": 46,
+    "optionId": 86,
+    "name": "pequeno",
+    "basePrice": true,
+    "price": 5.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 268,
+    "dishId": 46,
+    "optionId": 86,
+    "name": "médio",
+    "basePrice": true,
+    "price": 7.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 269,
+    "dishId": 46,
+    "optionId": 86,
+    "name": "grande",
+    "basePrice": true,
+    "price": 9.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 270,
+    "dishId": 46,
+    "optionId": 87,
+    "name": "suave",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 271,
+    "dishId": 46,
+    "optionId": 87,
+    "name": "médio",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 272,
+    "dishId": 46,
+    "optionId": 87,
+    "name": "forte",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 273,
+    "dishId": 47,
+    "optionId": 88,
+    "name": "copo 300ml",
+    "basePrice": true,
+    "price": 8.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 274,
+    "dishId": 47,
+    "optionId": 88,
+    "name": "copo 500ml",
+    "basePrice": true,
+    "price": 11.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 275,
+    "dishId": 47,
+    "optionId": 88,
+    "name": "jarra 1L",
+    "basePrice": true,
+    "price": 16.9,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 276,
+    "dishId": 47,
+    "optionId": 89,
+    "name": "limão",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 277,
+    "dishId": 47,
+    "optionId": 89,
+    "name": "hortelã",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 278,
+    "dishId": 47,
+    "optionId": 89,
+    "name": "canela",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 279,
+    "dishId": 47,
+    "optionId": 89,
+    "name": "gengibre",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 1
+  },
+  {
+    "id": 280,
+    "dishId": 48,
+    "optionId": 90,
+    "name": "1",
+    "basePrice": true,
+    "price": 6.5,
+    "originalPrice": null,
+    "additionalPrice": null
+  },
+  {
+    "id": 281,
+    "dishId": 48,
+    "optionId": 90,
+    "name": "3",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 13
+  },
+  {
+    "id": 282,
+    "dishId": 48,
+    "optionId": 90,
+    "name": "5",
+    "basePrice": false,
+    "price": null,
+    "originalPrice": null,
+    "additionalPrice": 20
   }
 ]

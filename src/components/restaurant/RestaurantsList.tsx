@@ -15,7 +15,7 @@ export default function RestaurantsList({
     <section className="max-container-md">
       <h2 className="text-lg font-bold text-brand mb-md">{title}</h2>
 
-      <ul className="flex flex-col gap-md">
+      <ul className="flex flex-col gap-md lg:grid lg:grid-cols-2 lg:gap-md">
         {!restaurants.length ? (
           <li className="text-label">Nenhum restaurante encontrado</li>
         ) : (

@@ -48,5 +48,855 @@
     "min": null,
     "max": null,
     "limit": 2
+  },
+  {
+    "id": 6,
+    "dishId": 6,
+    "name": "temperatura",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 7,
+    "dishId": 6,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 8,
+    "dishId": 7,
+    "name": "gelo",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 9,
+    "dishId": 7,
+    "name": "temperatura",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 10,
+    "dishId": 8,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 11,
+    "dishId": 8,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 2
+  },
+  {
+    "id": 12,
+    "dishId": 9,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 13,
+    "dishId": 9,
+    "name": "borda",
+    "type": "radio",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 1
+  },
+  {
+    "id": 14,
+    "dishId": 10,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 15,
+    "dishId": 10,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 4
+  },
+  {
+    "id": 16,
+    "dishId": 11,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 17,
+    "dishId": 11,
+    "name": "molho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 18,
+    "dishId": 12,
+    "name": "quantidade",
+    "type": "number",
+    "required": true,
+    "min": 1,
+    "max": 10,
+    "limit": null
+  },
+  {
+    "id": 19,
+    "dishId": 12,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 2
+  },
+  {
+    "id": 20,
+    "dishId": 13,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 21,
+    "dishId": 13,
+    "name": "picante",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 22,
+    "dishId": 14,
+    "name": "tamanho do yakisoba",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 23,
+    "dishId": 14,
+    "name": "refrigerante",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 24,
+    "dishId": 15,
+    "name": "quantidade",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 25,
+    "dishId": 15,
+    "name": "molhos",
+    "type": "checkbox",
+    "required": true,
+    "min": 1,
+    "max": 3,
+    "limit": null
+  },
+  {
+    "id": 26,
+    "dishId": 16,
+    "name": "sabor",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 27,
+    "dishId": 16,
+    "name": "quantidade",
+    "type": "number",
+    "required": true,
+    "min": 1,
+    "max": 5,
+    "limit": null
+  },
+  {
+    "id": 28,
+    "dishId": 17,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 5
+  },
+  {
+    "id": 29,
+    "dishId": 17,
+    "name": "quantidade",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 30,
+    "dishId": 18,
+    "name": "frutas",
+    "type": "checkbox",
+    "required": true,
+    "min": 1,
+    "max": 4,
+    "limit": null
+  },
+  {
+    "id": 31,
+    "dishId": 18,
+    "name": "complementos",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 32,
+    "dishId": 19,
+    "name": "sabor",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 33,
+    "dishId": 19,
+    "name": "tipo",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 34,
+    "dishId": 20,
+    "name": "quantidade",
+    "type": "number",
+    "required": true,
+    "min": 1,
+    "max": 5,
+    "limit": null
+  },
+  {
+    "id": 35,
+    "dishId": 20,
+    "name": "tipo",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 36,
+    "dishId": 21,
+    "name": "quantidade",
+    "type": "number",
+    "required": true,
+    "min": 1,
+    "max": 20,
+    "limit": null
+  },
+  {
+    "id": 37,
+    "dishId": 21,
+    "name": "fatiado",
+    "type": "radio",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 1
+  },
+  {
+    "id": 38,
+    "dishId": 22,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 39,
+    "dishId": 22,
+    "name": "cobertura extra",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 2
+  },
+  {
+    "id": 40,
+    "dishId": 23,
+    "name": "quantidade",
+    "type": "number",
+    "required": true,
+    "min": 1,
+    "max": 10,
+    "limit": null
+  },
+  {
+    "id": 41,
+    "dishId": 23,
+    "name": "temperatura",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 42,
+    "dishId": 24,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 43,
+    "dishId": 24,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 44,
+    "dishId": 25,
+    "name": "nível de picante",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 45,
+    "dishId": 25,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 4
+  },
+  {
+    "id": 46,
+    "dishId": 26,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 47,
+    "dishId": 26,
+    "name": "extras",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 48,
+    "dishId": 27,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 49,
+    "dishId": 27,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": true,
+    "min": 1,
+    "max": 5,
+    "limit": null
+  },
+  {
+    "id": 50,
+    "dishId": 28,
+    "name": "sabor dos tacos",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 51,
+    "dishId": 28,
+    "name": "sabor do refrigerante",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 52,
+    "dishId": 29,
+    "name": "partes do frango",
+    "type": "checkbox",
+    "required": true,
+    "min": 1,
+    "max": 3,
+    "limit": null
+  },
+  {
+    "id": 53,
+    "dishId": 29,
+    "name": "molhos",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 54,
+    "dishId": 30,
+    "name": "sabor do frango",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 55,
+    "dishId": 30,
+    "name": "refrigerante",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 56,
+    "dishId": 31,
+    "name": "tipo de pão",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 57,
+    "dishId": 31,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 4
+  },
+  {
+    "id": 58,
+    "dishId": 32,
+    "name": "porção",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 59,
+    "dishId": 32,
+    "name": "temperos",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 60,
+    "dishId": 33,
+    "name": "ponto da carne",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 61,
+    "dishId": 33,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 5
+  },
+  {
+    "id": 62,
+    "dishId": 34,
+    "name": "tamanho da batata",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 63,
+    "dishId": 34,
+    "name": "bebida",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 64,
+    "dishId": 35,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 65,
+    "dishId": 35,
+    "name": "coberturas",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 66,
+    "dishId": 36,
+    "name": "calda",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 67,
+    "dishId": 36,
+    "name": "coberturas",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 68,
+    "dishId": 37,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 69,
+    "dishId": 37,
+    "name": "queijo adicional",
+    "type": "radio",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 1
+  },
+  {
+    "id": 70,
+    "dishId": 38,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 71,
+    "dishId": 38,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 72,
+    "dishId": 39,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 73,
+    "dishId": 39,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 74,
+    "dishId": 40,
+    "name": "quantidade",
+    "type": "number",
+    "required": true,
+    "min": 1,
+    "max": 10,
+    "limit": null
+  },
+  {
+    "id": 75,
+    "dishId": 40,
+    "name": "temperos",
+    "type": "checkbox",
+    "required": true,
+    "min": 1,
+    "max": 3,
+    "limit": null
+  },
+  {
+    "id": 76,
+    "dishId": 41,
+    "name": "ponto da carne",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 77,
+    "dishId": 41,
+    "name": "acompanhamentos",
+    "type": "checkbox",
+    "required": true,
+    "min": 1,
+    "max": 2,
+    "limit": null
+  },
+  {
+    "id": 78,
+    "dishId": 42,
+    "name": "molho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 79,
+    "dishId": 42,
+    "name": "quantidade",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 80,
+    "dishId": 43,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 81,
+    "dishId": 43,
+    "name": "molho adicional",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 82,
+    "dishId": 44,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 83,
+    "dishId": 44,
+    "name": "coberturas extras",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 2
+  },
+  {
+    "id": 84,
+    "dishId": 45,
+    "name": "temperatura",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 85,
+    "dishId": 45,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 2
+  },
+  {
+    "id": 86,
+    "dishId": 46,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 87,
+    "dishId": 46,
+    "name": "intensidade",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 88,
+    "dishId": 47,
+    "name": "tamanho",
+    "type": "radio",
+    "required": true,
+    "min": null,
+    "max": 1,
+    "limit": null
+  },
+  {
+    "id": 89,
+    "dishId": 47,
+    "name": "adicionais",
+    "type": "checkbox",
+    "required": false,
+    "min": null,
+    "max": null,
+    "limit": 3
+  },
+  {
+    "id": 90,
+    "dishId": 48,
+    "name": "quantidade",
+    "type": "number",
+    "required": true,
+    "min": 1,
+    "max": 10,
+    "limit": null
   }
 ]

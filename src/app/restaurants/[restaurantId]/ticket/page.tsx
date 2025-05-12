@@ -15,7 +15,7 @@ type TicketPageProps = {
 export async function generateMetadata({
   params,
 }: TicketPageProps): Promise<Metadata> {
-  const { restaurantId } = params;
+  const { restaurantId } = await params;
 
   const ID = Number(restaurantId);
 

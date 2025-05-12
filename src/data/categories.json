@@ -28,5 +28,437 @@
     "name": "Sobremesas",
     "description": "",
     "restaurantId": 1
+  },
+  {
+    "id": 66,
+    "name": "Sanduíches",
+    "description": "Diversas opções de sanduíches personalizáveis",
+    "restaurantId": 2
+  },
+  {
+    "id": 67,
+    "name": "Saladas",
+    "description": "Saladas frescas com diversos ingredientes",
+    "restaurantId": 2
+  },
+  {
+    "id": 68,
+    "name": "Wraps",
+    "description": "Sanduíches enrolados em massa fina",
+    "restaurantId": 2
+  },
+  {
+    "id": 69,
+    "name": "Combos",
+    "description": "Sanduíche + bebida + batata ou cookie",
+    "restaurantId": 2
+  },
+  {
+    "id": 70,
+    "name": "Whopper",
+    "description": "Diversos tipos do famoso sanduíche da rede",
+    "restaurantId": 3
+  },
+  {
+    "id": 71,
+    "name": "Combos",
+    "description": "Sanduíche + batata + refrigerante",
+    "restaurantId": 3
+  },
+  {
+    "id": 72,
+    "name": "King Jr",
+    "description": "Opções para crianças com brinquedo",
+    "restaurantId": 3
+  },
+  {
+    "id": 73,
+    "name": "Sobremesas",
+    "description": "Sorvetes, tortas e outras sobremesas",
+    "restaurantId": 3
+  },
+  {
+    "id": 74,
+    "name": "Big Mac",
+    "description": "O clássico sanduíche e suas variações",
+    "restaurantId": 4
+  },
+  {
+    "id": 75,
+    "name": "McLanche Feliz",
+    "description": "Refeições completas para crianças com brinquedo",
+    "restaurantId": 4
+  },
+  {
+    "id": 76,
+    "name": "McOferta",
+    "description": "Combos com sanduíche, batata e bebida",
+    "restaurantId": 4
+  },
+  {
+    "id": 77,
+    "name": "McCafé",
+    "description": "Cafés especiais e doces variados",
+    "restaurantId": 4
+  },
+  {
+    "id": 6,
+    "name": "Pizzas Tradicionais",
+    "description": "Pizzas clássicas com sabores tradicionais italianos",
+    "restaurantId": 5
+  },
+  {
+    "id": 7,
+    "name": "Pizzas Especiais",
+    "description": "Pizzas com combinações exclusivas da casa",
+    "restaurantId": 5
+  },
+  {
+    "id": 8,
+    "name": "Massas",
+    "description": "Lasanhas, canelones e outras massas frescas",
+    "restaurantId": 5
+  },
+  {
+    "id": 9,
+    "name": "Entradas",
+    "description": "Bruschettas, pães de alho e outras delícias",
+    "restaurantId": 5
+  },
+  {
+    "id": 10,
+    "name": "Pratos Principais",
+    "description": "Yakisoba, frango xadrez e outros pratos orientais",
+    "restaurantId": 6
+  },
+  {
+    "id": 11,
+    "name": "Combos",
+    "description": "Combinações especiais com preço reduzido",
+    "restaurantId": 6
+  },
+  {
+    "id": 12,
+    "name": "Sushis e Sashimis",
+    "description": "Peças de sushi e fatias de peixe fresco",
+    "restaurantId": 6
+  },
+  {
+    "id": 13,
+    "name": "Sobremesas Orientais",
+    "description": "Doces típicos da culinária oriental",
+    "restaurantId": 6
+  },
+  {
+    "id": 14,
+    "name": "Açaí no Copo",
+    "description": "Porções de açaí em diferentes tamanhos",
+    "restaurantId": 7
+  },
+  {
+    "id": 15,
+    "name": "Açaí na Tigela",
+    "description": "Combinações de açaí com frutas e complementos",
+    "restaurantId": 7
+  },
+  {
+    "id": 16,
+    "name": "Sorvetes",
+    "description": "Diversos sabores de sorvetes artesanais",
+    "restaurantId": 7
+  },
+  {
+    "id": 17,
+    "name": "Complementos",
+    "description": "Adicionais para personalizar seu açaí",
+    "restaurantId": 7
+  },
+  {
+    "id": 18,
+    "name": "Pães Frescos",
+    "description": "Pães artesanais feitos na hora",
+    "restaurantId": 8
+  },
+  {
+    "id": 19,
+    "name": "Bolos e Tortas",
+    "description": "Bolos caseiros e tortas especiais",
+    "restaurantId": 8
+  },
+  {
+    "id": 20,
+    "name": "Salgados",
+    "description": "Coxinhas, pastéis, empadas e outros salgados",
+    "restaurantId": 8
+  },
+  {
+    "id": 21,
+    "name": "Cafés Especiais",
+    "description": "Diferentes tipos de café e bebidas quentes",
+    "restaurantId": 8
+  },
+  {
+    "id": 22,
+    "name": "Tacos",
+    "description": "Tacos com diferentes recheios",
+    "restaurantId": 9
+  },
+  {
+    "id": 23,
+    "name": "Burritos",
+    "description": "Tradicionais burritos mexicanos",
+    "restaurantId": 9
+  },
+  {
+    "id": 24,
+    "name": "Nachos",
+    "description": "Porções de nachos com diversos acompanhamentos",
+    "restaurantId": 9
+  },
+  {
+    "id": 25,
+    "name": "Combos Mexicanos",
+    "description": "Combinações especiais com bebida e nachos",
+    "restaurantId": 9
+  },
+  {
+    "id": 26,
+    "name": "Baldes de Frango",
+    "description": "Diferentes tamanhos de baldes com frango frito",
+    "restaurantId": 10
+  },
+  {
+    "id": 27,
+    "name": "Combos Individuais",
+    "description": "Combos com frango, acompanhamento e bebida",
+    "restaurantId": 10
+  },
+  {
+    "id": 28,
+    "name": "Sanduíches de Frango",
+    "description": "Diversos sanduíches de frango empanado",
+    "restaurantId": 10
+  },
+  {
+    "id": 29,
+    "name": "Acompanhamentos",
+    "description": "Batatas fritas, purê e outros complementos",
+    "restaurantId": 10
+  },
+  {
+    "id": 30,
+    "name": "Hambúrgueres",
+    "description": "Diversos tipos de hambúrgueres",
+    "restaurantId": 11
+  },
+  {
+    "id": 31,
+    "name": "Combos",
+    "description": "Combinações com hambúrguer, batata e bebida",
+    "restaurantId": 11
+  },
+  {
+    "id": 32,
+    "name": "Milk Shakes",
+    "description": "Milk shakes de diversos sabores",
+    "restaurantId": 11
+  },
+  {
+    "id": 33,
+    "name": "Sobremesas",
+    "description": "Sorvetes e outras sobremesas",
+    "restaurantId": 11
+  },
+  {
+    "id": 34,
+    "name": "Massas",
+    "description": "Diferentes tipos de massas com molhos variados",
+    "restaurantId": 12
+  },
+  {
+    "id": 35,
+    "name": "Lasanhas",
+    "description": "Tradicionais lasanhas italianas",
+    "restaurantId": 12
+  },
+  {
+    "id": 36,
+    "name": "Risotos",
+    "description": "Risotos cremosos com diferentes ingredientes",
+    "restaurantId": 12
+  },
+  {
+    "id": 37,
+    "name": "Entradas Italianas",
+    "description": "Bruschetta, antepastos e outras entradas",
+    "restaurantId": 12
+  },
+  {
+    "id": 38,
+    "name": "Steaks",
+    "description": "Cortes especiais de carne grelhada",
+    "restaurantId": 13
+  },
+  {
+    "id": 39,
+    "name": "Entradas",
+    "description": "Incluindo a famosa cebola empanada",
+    "restaurantId": 13
+  },
+  {
+    "id": 40,
+    "name": "Ribs",
+    "description": "Costelas com diversos molhos",
+    "restaurantId": 13
+  },
+  {
+    "id": 41,
+    "name": "Sobremesas",
+    "description": "Sobremesas especiais da casa",
+    "restaurantId": 13
+  },
+  {
+    "id": 42,
+    "name": "Chás",
+    "description": "Diversos tipos de chás quentes e gelados",
+    "restaurantId": 14
+  },
+  {
+    "id": 43,
+    "name": "Cafés",
+    "description": "Diferentes preparos de café",
+    "restaurantId": 14
+  },
+  {
+    "id": 44,
+    "name": "Bebidas de Mate",
+    "description": "Especialidades da casa com mate",
+    "restaurantId": 14
+  },
+  {
+    "id": 45,
+    "name": "Lanches Rápidos",
+    "description": "Pães de queijo, salgados e outros petiscos",
+    "restaurantId": 14
+  },
+  {
+    "id": 46,
+    "name": "Chocolates",
+    "description": "Chocolates em barra, bombons e trufas",
+    "restaurantId": 15
+  },
+  {
+    "id": 47,
+    "name": "Presentes",
+    "description": "Embalagens especiais para presente",
+    "restaurantId": 15
+  },
+  {
+    "id": 48,
+    "name": "Fondue",
+    "description": "Kits completos para fondue",
+    "restaurantId": 15
+  },
+  {
+    "id": 49,
+    "name": "Combos",
+    "description": "Combinações especiais de produtos",
+    "restaurantId": 15
+  },
+  {
+    "id": 50,
+    "name": "Sushis",
+    "description": "Diversas opções de sushis",
+    "restaurantId": 16
+  },
+  {
+    "id": 51,
+    "name": "Sashimis",
+    "description": "Fatias frescas de peixe",
+    "restaurantId": 16
+  },
+  {
+    "id": 52,
+    "name": "Temakis",
+    "description": "Temakis tradicionais e especiais",
+    "restaurantId": 16
+  },
+  {
+    "id": 53,
+    "name": "Combinados",
+    "description": "Combinações de sushi e sashimi",
+    "restaurantId": 16
+  },
+  {
+    "id": 54,
+    "name": "Mercearia",
+    "description": "Produtos não perecíveis e enlatados",
+    "restaurantId": 17
+  },
+  {
+    "id": 55,
+    "name": "Hortifruti",
+    "description": "Frutas, legumes e verduras frescas",
+    "restaurantId": 17
+  },
+  {
+    "id": 56,
+    "name": "Bebidas",
+    "description": "Águas, sucos, refrigerantes e bebidas alcoólicas",
+    "restaurantId": 17
+  },
+  {
+    "id": 57,
+    "name": "Congelados",
+    "description": "Alimentos prontos congelados",
+    "restaurantId": 17
+  },
+  {
+    "id": 58,
+    "name": "Pratos Principais",
+    "description": "Baião de dois, feijoada e outras especialidades regionais",
+    "restaurantId": 18
+  },
+  {
+    "id": 59,
+    "name": "Petiscos",
+    "description": "Acarajé, coxinha de macaxeira e outros petiscos regionais",
+    "restaurantId": 18
+  },
+  {
+    "id": 60,
+    "name": "Bebidas Típicas",
+    "description": "Caipirinha, água de coco e outras bebidas regionais",
+    "restaurantId": 18
+  },
+  {
+    "id": 61,
+    "name": "Sobremesas Regionais",
+    "description": "Doces típicos do nordeste",
+    "restaurantId": 18
+  },
+  {
+    "id": 62,
+    "name": "Esfihas",
+    "description": "Diversas opções de esfihas abertas e fechadas",
+    "restaurantId": 19
+  },
+  {
+    "id": 63,
+    "name": "Beirutes",
+    "description": "Sanduíches de pão sírio com diversos recheios",
+    "restaurantId": 19
+  },
+  {
+    "id": 64,
+    "name": "Combos",
+    "description": "Combos de esfihas com bebidas",
+    "restaurantId": 19
+  },
+  {
+    "id": 65,
+    "name": "Pratos Árabes",
+    "description": "Especialidades da culinária árabe",
+    "restaurantId": 19
   }
 ]

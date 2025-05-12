@@ -19,7 +19,7 @@ type MenuPageProps = {
 export async function generateMetadata({
   params,
 }: MenuPageProps): Promise<Metadata> {
-  const { dishId } = params;
+  const { dishId } = await params;
 
   const ID = Number(dishId);
 

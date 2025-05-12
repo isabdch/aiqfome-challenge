@@ -18,7 +18,7 @@ type RestaurantPageProps = {
 export async function generateMetadata({
   params,
 }: RestaurantPageProps): Promise<Metadata> {
-  const { restaurantId } = params;
+  const { restaurantId } = await params;
 
   const ID = Number(restaurantId);
 
