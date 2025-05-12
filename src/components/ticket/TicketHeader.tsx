@@ -19,6 +19,7 @@ export default async function TicketHeader({ restaurant }: TicketHeaderProps) {
         <Image
           width={IMG_SIZE}
           height={IMG_SIZE}
+          sizes={`${IMG_SIZE}px`}
           alt={restaurant.name}
           className="rounded-sm"
           src={restaurant.cover || "/images/restaurant.webp"}

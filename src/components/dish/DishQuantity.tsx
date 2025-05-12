@@ -1,5 +1,7 @@
 "use client";
 
+import React, { lazy } from "react";
+
 import { useOrderContext } from "@/contexts/OrderContext";
 
 import { formatCurrency } from "@/utils/currency";
@@ -7,7 +9,8 @@ import { formatCurrency } from "@/utils/currency";
 import type { Dish } from "@/types/dishes";
 
 import Button from "@/components/ui/Button";
-import Counter from "@/components/ui/Counter";
+
+const Counter = lazy(() => import("@/components/ui/Counter"));
 
 type DishQuantitySectionProps = {
   dish: Dish;

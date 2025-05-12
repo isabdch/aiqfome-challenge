@@ -8,7 +8,7 @@ type CategoryTagProps = {
 
 export default function CategoryTag({ dish }: CategoryTagProps) {
   return (
-    <div className="flex items-center gap-4xs" aria-label="Tags do prato">
+    <div className="flex items-center gap-4xs">
       {dish.tags.map((tag) => {
         const Icon = TAG_ICONS[tag.type];
 

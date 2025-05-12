@@ -25,6 +25,7 @@ export default function RestaurantHeader({
           <Image
             width={IMG_SIZE}
             height={IMG_SIZE}
+            sizes={`${IMG_SIZE}px`}
             className="rounded-sm"
             alt={restaurant.name}
             src={restaurant.cover || "/images/restaurant.webp"}

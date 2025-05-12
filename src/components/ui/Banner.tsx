@@ -23,6 +23,7 @@ export default function Banner({ image, height = "sm", alt }: BannerProps) {
         fill
         src={image}
         alt={alt}
+        sizes="100vw"
         loading="lazy"
         className="w-full h-full object-cover"
       />

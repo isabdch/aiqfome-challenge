@@ -29,7 +29,6 @@ export default function DishOption({ dish, option }: DishOptionProps) {
       <div
         className="flex flex-col gap-3sm"
         role={option.type === "radio" ? "radiogroup" : "group"}
-        aria-required={option.required}
       >
         {option.choices.map((choice) => (
           <OptionChoices

@@ -6,8 +6,7 @@ import { useParams } from "next/navigation";
 
 import { useFooter } from "@/hooks/useFooter";
 
-import Button from "@/components/ui/Button";
-
+const Button = lazy(() => import("@/components/ui/Button"));
 const TicketFooter = lazy(() => import("@/components/ticket/TicketFooter"));
 
 export default function Footer() {
