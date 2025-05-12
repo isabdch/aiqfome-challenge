@@ -10,7 +10,7 @@ type DishHeaderProps = {
 
 export default function DishHeader({ dish }: DishHeaderProps) {
   return (
-    <div className="p-md flex flex-col gap-6xs">
+    <header className="p-md flex flex-col gap-6xs">
       <h1 className="text-lg font-bold text-neutral-700">{dish.name}</h1>
 
       <div className="flex items-center gap-sm">
@@ -28,7 +28,9 @@ export default function DishHeader({ dish }: DishHeaderProps) {
         />
       </div>
 
-      <p className="text-sm text-neutral-500">{dish.description}</p>
-    </div>
+      {dish.description && (
+        <p className="text-sm text-neutral-500">{dish.description}</p>
+      )}
+    </header>
   );
 }

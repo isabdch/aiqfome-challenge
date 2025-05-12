@@ -32,6 +32,8 @@ export default function Button({
     <button
       {...props}
       onClick={onClick}
+      type={props.type || "button"}
+      aria-disabled={props.disabled}
       className={`flex items-center justify-center cursor-pointer gap-4xs font-bold rounded-md transition duration-200 disabled:opacity-50 ${
         buttonVariants[variant]
       } ${buttonSizes[size]} ${fullWidth ? "w-full" : ""}`}

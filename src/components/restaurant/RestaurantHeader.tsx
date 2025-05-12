@@ -35,18 +35,26 @@ export default function RestaurantHeader({
 
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3sm">
-            <button className="p-4xs" aria-label="Compartilhar">
-              <ShareIcon />
+            <button className="p-4xs" type="button" aria-label="Compartilhar">
+              <ShareIcon aria-hidden="true" />
             </button>
 
-            <button className="p-4xs" aria-label="Salvar como favorito">
-              <HeartIcon />
+            <button
+              className="p-4xs"
+              type="button"
+              aria-label="Salvar como favorito"
+            >
+              <HeartIcon aria-hidden="true" />
             </button>
           </div>
 
-          <Button variant="color" size="small">
+          <Button
+            variant="color"
+            size="small"
+            aria-label="Ver mais informações do restaurante"
+          >
             mais infos
-            <ArrowIcon />
+            <ArrowIcon aria-hidden="true" />
           </Button>
         </div>
       </div>

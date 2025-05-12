@@ -15,6 +15,8 @@ export default function Collapse({
     <div className="border-b-4 border-neutral-100 last-of-type:border-b-0">
       <button
         onClick={onToggle}
+        aria-expanded={isOpen}
+        aria-controls="collapse-content"
         className="w-full px-md py-3sm my-4xs flex justify-between items-center"
       >
         {typeof title === "string" ? <span>{title}</span> : title}
@@ -22,6 +24,7 @@ export default function Collapse({
 
       {children && (
         <div
+          id="collapse-content"
           className={`px-md overflow-hidden transition-max-height duration-500 ${
             isOpen ? "max-h-screen" : "max-h-0"
           }`}

@@ -11,8 +11,11 @@ export default async function TicketHeader({ restaurant }: TicketHeaderProps) {
   const IMG_SIZE = 32;
 
   return (
-    <div className="px-md flex items-center gap-sm">
-      <Link href={`/restaurants/${restaurant.id}`}>
+    <header className="px-md flex items-center gap-sm">
+      <Link
+        href={`/restaurants/${restaurant.id}`}
+        aria-label="Voltar para a página do restaurante"
+      >
         <Image
           width={IMG_SIZE}
           height={IMG_SIZE}
@@ -26,11 +29,11 @@ export default async function TicketHeader({ restaurant }: TicketHeaderProps) {
         <p className="text-label font-bold">seus itens em</p>
 
         <Link href={`/restaurants/${restaurant.id}`}>
-          <h2 className="text-md font-bold text-neutral-900">
+          <h1 className="text-md font-bold text-neutral-900">
             {restaurant.name}
-          </h2>
+          </h1>
         </Link>
       </div>
-    </div>
+    </header>
   );
 }

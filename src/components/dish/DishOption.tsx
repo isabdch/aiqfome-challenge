@@ -13,7 +13,7 @@ type DishOptionProps = {
 
 export default function DishOption({ dish, option }: DishOptionProps) {
   return (
-    <div className="p-md border-b-4 border-neutral-100 flex flex-col gap-md">
+    <section className="p-md border-b-4 border-neutral-100 flex flex-col gap-md">
       <div className="flex items-center justify-between gap-sm">
         <div className="flex flex-col gap-2xs">
           <h3 className="text-md font-bold text-neutral-900">{option.name}</h3>
@@ -29,6 +29,7 @@ export default function DishOption({ dish, option }: DishOptionProps) {
       <div
         className="flex flex-col gap-3sm"
         role={option.type === "radio" ? "radiogroup" : "group"}
+        aria-required={option.required}
       >
         {option.choices.map((choice) => (
           <OptionChoices
@@ -40,6 +41,6 @@ export default function DishOption({ dish, option }: DishOptionProps) {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

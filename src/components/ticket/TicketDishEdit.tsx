@@ -25,9 +25,12 @@ export default function TicketDishEdit({
 
   return (
     <div className="flex justify-end items-center gap-lg">
-      <Link href={`/restaurants/${restaurant.id}/dishes/${dish.id}`}>
-        <Button size="small" variant="color">
-          <EditPencilIcon />
+      <Link
+        href={`/restaurants/${restaurant.id}/dishes/${dish.id}`}
+        aria-label={`Editar item: ${dish.name}`}
+      >
+        <Button size="small" variant="color" aria-hidden="true" tabIndex={-1}>
+          <EditPencilIcon aria-hidden="true" />
           editar
         </Button>
       </Link>

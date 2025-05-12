@@ -28,29 +28,49 @@ export default function Counter({
     height: COUNTER_BUTTON_SIZE_VARIANTS[size],
   };
 
+  const labelText = label || "Quantidade";
+
   return (
-    <div className="flex items-center gap-4xs">
+    <div
+      role="group"
+      aria-label={labelText}
+      className="flex items-center gap-4xs"
+    >
       <button
+        type="button"
         onClick={() => onChange(trash ? 0 : value - 1)}
         className="active:opacity-70"
+        aria-label={trash && value > 0 ? "Remover item" : "Diminuir quantidade"}
+        disabled={value <= 0}
       >
         {trash && value > 0 ? (
-          <TrashIcon viewBox="0 0 32 33" {...SIZE_PROPS} />
+          <TrashIcon viewBox="0 0 32 33" {...SIZE_PROPS} aria-hidden="true" />
         ) : value > 0 ? (
-          <MinusIcon viewBox="0 0 24 24" {...SIZE_PROPS} />
+          <MinusIcon viewBox="0 0 24 24" {...SIZE_PROPS} aria-hidden="true" />
         ) : (
-          <MinusGrayIcon viewBox="0 0 24 24" {...SIZE_PROPS} />
+          <MinusGrayIcon
+            {...SIZE_PROPS}
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          />
         )}
       </button>
 
       <div
+        role="status"
+        aria-label={`${labelText}: ${value}`}
         className={`flex items-center justify-center w-xl font-bold text-neutral-700 ${COUNTER_TEXT_SIZE_VARIANTS[size]}`}
       >
         {value}
       </div>
 
-      <button onClick={() => onChange(value + 1)} className="active:opacity-70">
-        <PlusIcon viewBox="0 0 32 33" {...SIZE_PROPS} />
+      <button
+        type="button"
+        onClick={() => onChange(value + 1)}
+        className="active:opacity-70"
+        aria-label="Aumentar quantidade"
+      >
+        <PlusIcon viewBox="0 0 32 33" {...SIZE_PROPS} aria-hidden="true" />
       </button>
 
       {label && (

@@ -16,7 +16,7 @@ export default function TicketDishCard({
   restaurant,
 }: TicketDishCardProps) {
   return (
-    <section className="p-md border-b-4 border-neutral-100 last:border-b-0 flex flex-col gap-6xs">
+    <article className="p-md border-b-4 border-neutral-100 last:border-b-0 flex flex-col gap-6xs">
       <TicketDishHeader dish={dish} />
       <TicketDishEdit restaurant={restaurant} dish={dish} />
       <TicketDishOptions options={dish.options} />
@@ -24,6 +24,6 @@ export default function TicketDishCard({
       {dish.observations && (
         <TicketDishObservations observations={dish.observations} />
       )}
-    </section>
+    </article>
   );
 }

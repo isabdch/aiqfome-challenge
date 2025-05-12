@@ -31,28 +31,29 @@ export default function RestaurantHeaderInfo({
     RESTAURANT_STATUS_COLOR_VARIANTS[restaurant.status];
 
   return (
-    <div className="flex flex-col gap-sm">
+    <div className="flex flex-col gap-sm" aria-label="Informações do restaurante">
       <div className="flex items-center gap-6xs">
         <Link
           href={`/restaurants/${restaurant.id}`}
           className={`${deliveryTextColorVariant} flex items-center gap-4xs`}
+          aria-label={`Taxa de entrega: ${formatDeliveryText(restaurant.deliveryFee)}`}
         >
-          <MotorcycleIcon />
+          <MotorcycleIcon aria-hidden="true" />
 
           <span className="text-sm font-bold">
             {formatDeliveryText(restaurant.deliveryFee)}
           </span>
 
-          <ArrowIcon />
+          <ArrowIcon aria-hidden="true" />
         </Link>
 
-        <div className="dot-separator" />
+        <div className="dot-separator" aria-hidden="true" />
 
         <p className="text-xs-bold-neutral-500">
           hoje, {restaurant.deliveryTime}
         </p>
 
-        <div className="dot-separator" />
+        <div className="dot-separator" aria-hidden="true" />
 
         <p className="text-xs-bold-neutral-500">{restaurant.distance}km</p>
       </div>
@@ -70,19 +71,23 @@ export default function RestaurantHeaderInfo({
         <Link
           href={`/restaurants/${restaurant.id}`}
           className="flex items-center text-neutral-500 gap-4xs"
+          aria-label={`Avaliação: ${restaurant.rating} de 5 estrelas`}
         >
-          <StarIcon width={16} height={16} viewBox="0 0 24 24" />
+          <StarIcon width={16} height={16} viewBox="0 0 24 24" aria-hidden="true" />
 
           <span className="text-xs-bold-neutral-500">
             {restaurant.rating} de 5
           </span>
 
-          <ArrowIcon />
+          <ArrowIcon aria-hidden="true" />
         </Link>
 
-        <div className="dot-separator" />
+        <div className="dot-separator" aria-hidden="true" />
 
-        <p className={`${restaurantStatusColorVariant} font-bold text-xs`}>
+        <p 
+          className={`${restaurantStatusColorVariant} font-bold text-xs`}
+          aria-label={`Status: ${formatRestaurantStatusText(restaurant)}`}
+        >
           {formatRestaurantStatusText(restaurant)}
         </p>
       </div>

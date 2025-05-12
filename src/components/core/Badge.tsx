@@ -10,10 +10,11 @@ export default function Badge({ text, variant = "solid" }: BadgeProps) {
   };
 
   return (
-    <div
+    <span
+      role="status"
       className={`w-fit py-6xs px-4xs rounded-sm flex items-center justify-center ${BADGE_STYLE_VARIANTS[variant]}`}
     >
-      <p className="text-center text-xs font-bold">{text}</p>
-    </div>
+      <span className="text-center text-xs font-bold">{text}</span>
+    </span>
   );
 }

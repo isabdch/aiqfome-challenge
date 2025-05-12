@@ -7,18 +7,22 @@ import Button from "@/components/core/Button";
 export default function TicketFooter() {
   const { getTotalPrice } = useDishOrderContext();
 
+  const totalPrice = getTotalPrice();
+
   return (
-    <header className="bg-neutral-0 shadow-footer rounded-t-lg py-md px-xl sticky bottom-0">
+    <footer className="bg-neutral-0 shadow-footer rounded-t-lg py-md px-xl sticky bottom-0">
       <div className="max-container-md flex justify-between items-center gap-2lg">
         <div className="flex flex-col gap-2xs">
           <p className="text-sm text-neutral-900 font-bold">subtotal</p>
-          <h2 className="text-lg font-extrabold text-brand">
-            {formatCurrency(getTotalPrice())}
-          </h2>
+          <p className="text-lg font-extrabold text-brand">
+            {formatCurrency(totalPrice)}
+          </p>
         </div>
 
-        <Button fullWidth>ir para pagamento</Button>
+        <Button fullWidth aria-label="Ir para página de pagamento">
+          ir para pagamento
+        </Button>
       </div>
-    </header>
+    </footer>
   );
 }

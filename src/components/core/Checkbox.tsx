@@ -19,6 +19,7 @@ export default function Checkbox({
       role="checkbox"
       disabled={disabled}
       aria-checked={checked}
+      aria-label={label}
       className="flex items-center gap-4xs"
       onClick={() => {
         onChange(!checked);
@@ -36,7 +37,7 @@ export default function Checkbox({
                         : "bg-transparent border-neutral-400"
                     }`}
         >
-          {checked && <CheckIcon />}
+          {checked && <CheckIcon aria-hidden="true" />}
         </div>
       </div>
 

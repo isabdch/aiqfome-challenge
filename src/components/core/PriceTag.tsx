@@ -35,7 +35,7 @@ export default function PriceTag({
   const priceColor = hasDiscount ? dishDiscountStatus(hasDiscount) : color;
 
   return (
-    <div className="h-fit flex items-center gap-2xs">
+    <div className="h-fit flex items-center gap-2xs" role="text">
       {originalPrice && discountPosition === "left" && (
         <span className="mr-2xs text-xs-bold-neutral-500">
           de {formatCurrency(originalPrice)} por
@@ -63,6 +63,7 @@ export default function PriceTag({
               width={ICON_SIZE}
               height={ICON_SIZE}
               viewBox="0 0 24 24"
+              aria-hidden="true"
             />
           )}
 

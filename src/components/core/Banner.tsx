@@ -14,7 +14,11 @@ export default function Banner({ image, height = "sm", alt }: BannerProps) {
   };
 
   return (
-    <div className={`relative w-full ${heightVariants[height]}`}>
+    <div
+      role="img"
+      aria-label={alt}
+      className={`relative w-full ${heightVariants[height]}`}
+    >
       <Image
         fill
         src={image}

@@ -17,13 +17,15 @@ export default function DishObservations({ dish }: DishObservationsProps) {
     selectedDishes.find((d) => d.id === dish.id)?.observations || "";
 
   return (
-    <div className="pt-md px-md pb-8xl">
+    <section className="pt-md px-md pb-8xl">
+      <h3 className="sr-only">Observações do prato</h3>
+
       <Textarea
         placeholder={`alguma observação do item? • opcional
 ex: tirar algum ingrediente, ponto do prato`}
         value={currentObservation}
         onChange={(newValue) => handleDishObservations(dish, newValue)}
       />
-    </div>
+    </section>
   );
 }

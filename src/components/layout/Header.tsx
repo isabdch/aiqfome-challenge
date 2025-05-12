@@ -25,9 +25,9 @@ export default function Header() {
         isHomePage && "mb-xs"
       }`}
     >
-      <nav className="flex items-center gap-lg max-container-md mx-auto w-full">
+      <nav className="flex items-center gap-lg max-container-md mx-auto w-full" aria-label="Principal">
         <Link href="/" aria-label="Ir para página inicial">
-          <LogoIcon />
+          <LogoIcon aria-hidden="true" />
         </Link>
 
         <div className="flex items-center gap-2sm">

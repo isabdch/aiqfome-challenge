@@ -37,15 +37,16 @@ export default function OptionChoices({
   } = useDishOrderContext();
 
   const CHOICE_PRICE = choice.price || choice.additionalPrice;
-
   const CHOICE_QTY = getChoiceQuantity(choice.id);
+
+  const isDisabled = optionLimitReached(option) && CHOICE_QTY < 1;
 
   return (
     <div className="flex items-center justify-between gap-md">
       {type === "radio" && (
         <Radio
           name={`radio-option-${choice.optionId}`}
-          icon={choice.originalPrice && <DiscountIcon />}
+          icon={choice.originalPrice && <DiscountIcon aria-hidden="true" />}
           label={choice.name}
           checked={CHOICE_QTY > 0}
           onChange={() => selectRadioChoice(choice, dish)}
@@ -64,6 +65,7 @@ export default function OptionChoices({
         <Checkbox
           label={choice.name}
           checked={CHOICE_QTY > 0}
+          disabled={isDisabled}
           onChange={() =>
             toggleCheckboxChoice(
               selectedChoice(choice) || { ...choice, quantity: 1 },
@@ -71,7 +73,6 @@ export default function OptionChoices({
               option
             )
           }
-          disabled={optionLimitReached(option) && CHOICE_QTY < 1}
         />
       )}
 

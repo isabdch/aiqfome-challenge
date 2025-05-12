@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-import { usePathname, useRouter } from "next/navigation";
-
 import { saveToLocalStorage, loadFromLocalStorage } from "@/lib/localStorage";
 
 import type { Dish, SelectedDish } from "@/types/dishes";
@@ -36,9 +34,6 @@ const SELECTED_DISHES_KEY = "selectedDishes";
 const SELECTED_CHOICES_KEY = "selectedChoices";
 
 export function useDishOrder(): UseDishOrderReturn {
-  const router = useRouter();
-  const pathname = usePathname();
-
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [selectedDishes, setSelectedDishes] = useState<SelectedDish[]>([]);
   const [selectedChoices, setSelectedChoices] = useState<SelectedChoice[]>([]);
@@ -71,16 +66,6 @@ export function useDishOrder(): UseDishOrderReturn {
       saveToLocalStorage(SELECTED_CHOICES_KEY, selectedChoices);
     }
   }, [selectedChoices, isLoading]);
-
-  useEffect(() => {
-    if (
-      !isLoading &&
-      pathname.includes("ticket") &&
-      selectedDishes.length === 0
-    ) {
-      router.replace("/");
-    }
-  }, [pathname, isLoading, selectedDishes, router]);
 
   function handleDish(dishToHandle: Dish, newQuantity: number): void {
     if (

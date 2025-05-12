@@ -20,7 +20,7 @@ export default function RestaurantCategories({
   const { openStates, toggleCategory } = useCategoriesStates(categories);
 
   return (
-    <div>
+    <section aria-label="Categorias do restaurante">
       {categories.map((category) => {
         const isOpen = openStates[category.id] || false;
 
@@ -37,16 +37,22 @@ export default function RestaurantCategories({
               />
             }
           >
-            {category.dishes.length > 0 && (
-              <div className="flex flex-col gap-lg">
+            {category.dishes.length > 0 ? (
+              <ul className="flex flex-col gap-lg">
                 {category.dishes.map((dish) => (
-                  <CategoryDishCard key={dish.id} dish={dish} />
+                  <li key={dish.id}>
+                    <CategoryDishCard dish={dish} />
+                  </li>
                 ))}
-              </div>
+              </ul>
+            ) : (
+              <p className="text-xs text-neutral-500">
+                Nenhum prato disponível nesta categoria
+              </p>
             )}
           </Collapse>
         );
       })}
-    </div>
+    </section>
   );
 }

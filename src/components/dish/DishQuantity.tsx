@@ -19,10 +19,13 @@ export default function DishQuantitySection({
   const { handleDish, dishIsAlreadySelected, selectedDish, getDishPrice } =
     useDishOrderContext();
 
+  const isSelected = dishIsAlreadySelected(dish);
+  const quantity = selectedDish(dish)?.quantity || 0;
+
   return (
     <section className="pt-sm pb-lg px-md border-b-4 border-neutral-100 flex items-center justify-between">
       <div className="flex flex-col gap-6xs">
-        <p className="text-md-bold-neutral-700">quantos?</p>
+        <h3 className="text-md-bold-neutral-700">quantos?</h3>
 
         <p className="text-sm font-semibold text-neutral-500">
           total{" "}
@@ -32,11 +35,11 @@ export default function DishQuantitySection({
         </p>
       </div>
 
-      {dishIsAlreadySelected(dish) ? (
+      {isSelected ? (
         <Counter
           trash
           size="large"
-          value={selectedDish(dish)?.quantity || 0}
+          value={quantity}
           onChange={(value) => handleDish(dish, value)}
         />
       ) : (
@@ -44,6 +47,7 @@ export default function DishQuantitySection({
           size="medium"
           variant="secondary"
           onClick={() => handleDish(dish, 1)}
+          aria-label={`Adicionar ${dish.name} ao pedido`}
         >
           adicionar
         </Button>

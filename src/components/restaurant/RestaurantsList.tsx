@@ -12,20 +12,20 @@ export default function RestaurantsList({
   restaurants,
 }: RestaurantsListProps) {
   return (
-    <article className="max-container-md">
+    <section className="max-container-md">
       <h2 className="text-lg font-bold text-brand mb-md">{title}</h2>
 
-      <ul role="list" className="flex flex-col gap-md">
+      <ul className="flex flex-col gap-md">
         {!restaurants.length ? (
           <li className="text-label">Nenhum restaurante encontrado</li>
         ) : (
           restaurants.map((restaurant) => (
-            <li role="listitem" key={restaurant.id}>
+            <li key={restaurant.id}>
               <RestaurantCard restaurant={restaurant} />
             </li>
           ))
         )}
       </ul>
-    </article>
+    </section>
   );
 }

@@ -1,5 +1,7 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 import { useDishOrderContext } from "@/contexts/DishOrderContext";
 
 import type { Restaurant } from "@/types/restaurants";
@@ -13,15 +15,35 @@ type TicketDishesListProps = {
 export default function TicketDishesList({
   restaurant,
 }: TicketDishesListProps) {
+  const router = useRouter();
+
   const { getSelectedDishesWithChoices } = useDishOrderContext();
 
   const selectedDishesWithSelectedChoices = getSelectedDishesWithChoices();
 
+  if (!selectedDishesWithSelectedChoices.length) {
+    return (
+      <div className="p-md flex flex-col items-center gap-4xs">
+        <p className="text-label text-center">Seu ticket está vazio.</p>
+
+        <button
+          type="button"
+          onClick={() => router.back()}
+          className="text-sm text-brand text-center underline"
+        >
+          Voltar
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <div>
+    <ul aria-label={`Itens do pedido no restaurante ${restaurant.name}`}>
       {selectedDishesWithSelectedChoices.map((dish) => (
-        <TicketDishCard key={dish.id} dish={dish} restaurant={restaurant} />
+        <li key={dish.id}>
+          <TicketDishCard dish={dish} restaurant={restaurant} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

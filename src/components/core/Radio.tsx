@@ -2,6 +2,7 @@ type RadioProps = {
   label: string;
   name: string;
   checked: boolean;
+  disabled?: boolean;
   icon?: React.ReactNode;
   onChange: (checked: boolean) => void;
 };
@@ -11,6 +12,7 @@ export default function Radio({
   name,
   icon,
   checked,
+  disabled,
   onChange,
 }: RadioProps) {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -25,6 +27,8 @@ export default function Radio({
       name={name}
       role="radio"
       type="button"
+      disabled={disabled}
+      aria-disabled={disabled}
       aria-checked={checked}
       aria-labelledby={label}
       onClick={handleClick}

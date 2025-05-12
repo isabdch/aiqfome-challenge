@@ -24,7 +24,7 @@ export default function Footer() {
         <footer className="bg-neutral-100 py-lg px-md">
           <div className="max-container-md flex flex-col gap-sm justify-center items-center">
             <p className="text-sm text-bold-purple-center">
-              feito com 💜 em maringá-PR
+              feito com <span aria-label="amor">💜</span> em maringá-PR
             </p>
 
             {showButton ? (
@@ -32,6 +32,9 @@ export default function Footer() {
                 fullWidth
                 disabled={!isButtonEnabled}
                 onClick={handleNavigate}
+                aria-label={
+                  !isButtonEnabled ? "Ver ticket desabilitado" : "Ver ticket"
+                }
               >
                 ver ticket
               </Button>

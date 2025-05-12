@@ -19,7 +19,7 @@ export default function RestaurantCategoryHeader({
       <div className=" flex flex-col flex-1 gap-4xs">
         <h2 className="flex items-center gap-4xs text-md font-bold text-neutral-900">
           {category.name}
-          {hasDiscount && <HasDiscountIcon />}
+          {hasDiscount && <HasDiscountIcon aria-label="Com desconto" />}
         </h2>
 
         {category.description && (
@@ -30,6 +30,7 @@ export default function RestaurantCategoryHeader({
       </div>
 
       <ChevronDownIcon
+        aria-hidden="true"
         className={`${isOpen ? "rotate-180" : ""} transition duration-300`}
       />
     </div>
