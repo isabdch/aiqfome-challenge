@@ -22,7 +22,12 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
     getCategoriesWithDishes(ID),
   ]);
 
-  if (!restaurant) return <div>Restaurante não encontrado</div>;
+  if (!restaurant)
+    return (
+      <div className="p-md text-label text-center">
+        Restaurante não encontrado
+      </div>
+    );
 
   return (
     <div className="max-container-md">

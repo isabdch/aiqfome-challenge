@@ -1,5 +1,8 @@
 import { useState, useEffect, useMemo } from "react";
 
+import { formatDeliveryText } from "@/utils/delivery";
+import { formatCategoryStatus } from "@/utils/category";
+
 import type { Restaurant } from "@/types/restaurants";
 
 type UseRestaurantsDataParams = {
@@ -22,6 +25,12 @@ export function useRestaurantsData({
   const [allFetchedRestaurants, setAllFetchedRestaurants] = useState<
     Restaurant[]
   >([]);
+
+  const checkSearchTerm = (item: string | number, term: string) => {
+    if (typeof item === "string") return item.toLowerCase().includes(term);
+
+    return item.toString().includes(term);
+  };
 
   useEffect(() => {
     async function fetchRestaurantsData() {
@@ -56,18 +65,47 @@ export function useRestaurantsData({
     const lowercasedSearchTerm = searchTerm.toLowerCase();
 
     return allFetchedRestaurants.filter((restaurant) => {
-      const nameMatch = restaurant.name
-        .toLowerCase()
-        .includes(lowercasedSearchTerm);
+      const nameMatch = checkSearchTerm(restaurant.name, lowercasedSearchTerm);
 
       const tagMatch =
         restaurant.tags &&
         Array.isArray(restaurant.tags) &&
         restaurant.tags.some((tag) =>
-          tag.toLowerCase().includes(lowercasedSearchTerm)
+          checkSearchTerm(tag, lowercasedSearchTerm)
         );
 
-      return nameMatch || tagMatch;
+      const imageMatch = checkSearchTerm(
+        restaurant.cover,
+        lowercasedSearchTerm
+      );
+
+      const deliveryFeeMatch =
+        checkSearchTerm(restaurant.deliveryFee, lowercasedSearchTerm) ||
+        checkSearchTerm(
+          formatDeliveryText(restaurant.deliveryFee),
+          lowercasedSearchTerm
+        );
+
+      const statusMatch =
+        checkSearchTerm(restaurant.status, lowercasedSearchTerm) ||
+        checkSearchTerm(
+          formatCategoryStatus(restaurant.status),
+          lowercasedSearchTerm
+        );
+
+      const ratingMatch = checkSearchTerm(
+        restaurant.rating,
+        lowercasedSearchTerm
+      );
+
+      return (
+        nameMatch ||
+        tagMatch ||
+        imageMatch ||
+        deliveryFeeMatch ||
+        ratingMatch ||
+        statusMatch
+      );
     });
   }, [allFetchedRestaurants, searchTerm]);
 

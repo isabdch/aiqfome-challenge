@@ -19,7 +19,10 @@ export default async function MenuPage({ params }: MenuPageProps) {
 
   const dish = await getDishWithDetails(ID);
 
-  if (!dish) return <div>Prato não encontrado</div>;
+  if (!dish)
+    return (
+      <div className="p-md text-label text-center">Prato não encontrado</div>
+    );
 
   return (
     <div>

@@ -16,9 +16,13 @@ export default function RestaurantsList({
       <h2 className="text-lg font-bold text-brand mb-md">{title}</h2>
 
       <div className="flex flex-col gap-md">
-        {restaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.id} restaurant={restaurant} />
-        ))}
+        {!restaurants.length ? (
+          <p className="text-label">Nenhum restaurante encontrado</p>
+        ) : (
+          restaurants.map((restaurant) => (
+            <RestaurantCard key={restaurant.id} restaurant={restaurant} />
+          ))
+        )}
       </div>
     </article>
   );

@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-
 import { hasCategoryDiscount } from "@/utils/category";
+
+import { useCategoriesStates } from "@/hooks/useCategoriesStates";
 
 import type { Category } from "@/types/categories";
 
@@ -17,16 +17,7 @@ type RestaurantCategoriesProps = {
 export default function RestaurantCategories({
   categories,
 }: RestaurantCategoriesProps) {
-  const [openStates, setOpenStates] = useState<Record<number, boolean>>({
-    1: true,
-  });
-
-  const toggleCategory = (categoryId: number) => {
-    setOpenStates((prevStates) => ({
-      ...prevStates,
-      [categoryId]: !prevStates[categoryId],
-    }));
-  };
+  const { openStates, toggleCategory } = useCategoriesStates(categories);
 
   return (
     <div>

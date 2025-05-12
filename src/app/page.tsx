@@ -21,7 +21,7 @@ export default function Home() {
 
       <section className="py-lg px-md flex flex-col gap-2xl max-container-md mx-auto">
         {filteredRestaurants.length === 0 && searchTerm.length > 0 ? (
-          <p className="text-center text-neutral-500 text-sm">
+          <p className="text-center text-label">
             Nenhum restaurante encontrado para &quot;{searchTerm}&quot;.
           </p>
         ) : (

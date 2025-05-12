@@ -16,7 +16,12 @@ export default async function TicketPage({ params }: TicketPageProps) {
 
   const restaurant = await getRestaurantById(ID);
 
-  if (!restaurant) return <div>Restaurante não encontrado</div>;
+  if (!restaurant)
+    return (
+      <div className="p-md text-label text-center">
+        Restaurante não encontrado
+      </div>
+    );
 
   return (
     <div className="py-lg mb-3md max-container-md">
